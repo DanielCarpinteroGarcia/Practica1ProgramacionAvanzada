@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea7c9e9c-def3-4e33-958d-53336d40e38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iris.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miles_dollars.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/RowWithLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JillianDani/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
