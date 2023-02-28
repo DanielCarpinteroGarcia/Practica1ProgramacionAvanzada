@@ -1,5 +1,6 @@
 package LecturaDatosCSV;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class TableWithLabels extends Table{
@@ -10,5 +11,9 @@ public class TableWithLabels extends Table{
 
     public Map<String, Integer> getLabelsToIndex(){
         return labelsToIndex;
+    }
+
+    public void setLabelsToIndex(String e, int n){
+        labelsToIndex.put(e, n);
     }
 }
