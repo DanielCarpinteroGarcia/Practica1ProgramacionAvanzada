@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3546173-7496-48b1-b18c-142a5021d4e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
