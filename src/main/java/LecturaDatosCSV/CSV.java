@@ -47,7 +47,7 @@ public class CSV {
             }
             r.numberClass = t.labelsToIndex.size();
             t.columnas.add(r);
-            t.labelsToIndex.put(r.numberClass, cadena[i]);
+            t.labelsToIndex.put(cadena[i], r.numberClass);
         }
         return t;
     }

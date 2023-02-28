@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3546173-7496-48b1-b18c-142a5021d4e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +28,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/LecturaDatosCSV" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CSVTest">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaDatosCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaDatosCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaDatosCSV.CSVTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaDatosCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaDatosCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaDatosCSV.CSVTest" />
+      <option name="METHOD_NAME" value="readTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CSVTest" />
+        <item itemvalue="JUnit.CSVTest.readTable" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
