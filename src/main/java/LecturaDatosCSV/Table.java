@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Table {
-    private List<String> headers;
+    private List<String> headers = new ArrayList<>();
     private List<Row> columnas = new ArrayList<>();
     public Row getRowAt(int pos){
         return columnas.get(pos);
@@ -18,8 +18,8 @@ public class Table {
         return columnas;
     }
 
-    public void setHeaders(List<String> l){
-        headers = l;
+    public void setHeaders(String h){
+        headers.add(h);
     }
 
     public void setColumnas(Row r){

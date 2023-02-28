@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,9 +76,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CSVTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaDatosCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaDatosCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaDatosCSV.CSVTest" />
+      <option name="METHOD_NAME" value="readTableWithLabels" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CSVTest" />
+        <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
         <item itemvalue="JUnit.CSVTest.readTable" />
       </list>
     </recent_temporary>

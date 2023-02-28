@@ -12,7 +12,6 @@ class CSVTest {
     void readTable() throws FileNotFoundException {
         CSV objeto = new CSV();
         String fichero = "miles_dollars.csv";
-        String fichero2 = "iris.csv";
         Table obtenido = objeto.readTable(fichero);
 
         //Número de ejemplares o filas leídos.
@@ -42,10 +41,15 @@ class CSVTest {
     }
 
     @org.junit.jupiter.api.Test
-    void readTableWithLabels() {
+    void readTableWithLabels() throws FileNotFoundException {
             //Aquí solo comprobamos si el número que se asigna a cada fila es correcto,
             // el resto de comprobaciones ya están realizadas en el primer test.
-            TableWithLabels obtenido = new TableWithLabels();
+            CSV objeto = new CSV();
+            String fichero2 = "iris.csv";
+            TableWithLabels obtenido = objeto.readTableWithLabels(fichero2);
+
+            assertEquals(1, obtenido.getRowAt(2).getNumberClass());
+            assertEquals(2, obtenido.getRowAt(55).getNumberClass());
 
     }
 }
