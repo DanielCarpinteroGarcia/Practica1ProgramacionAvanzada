@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSVTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Row.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/RowWithLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/RowWithLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/TableWithLabels.java" afterDir="false" />
     </list>

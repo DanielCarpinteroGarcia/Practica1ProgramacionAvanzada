@@ -2,6 +2,8 @@ package LecturaDatosCSV;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CSV {
@@ -11,18 +13,22 @@ public class CSV {
         Scanner entrada = new Scanner(new File(fichero));
         String linea = entrada.nextLine();
         String [] cadena = linea.split(",");
+        List<String> lista = new ArrayList<>();
         for(String e : cadena){
-            t.headers.add(e);
+            lista.add(e);
         }
+        t.setHeaders(lista);
 
         while(entrada.hasNextLine()){
             r = new Row();
+            List<Double> l = new ArrayList<>();
             linea = entrada.nextLine();
             cadena = linea.split(",");
             for(String e : cadena){
-                r.data.add(Double.parseDouble(e));
+                l.add(Double.parseDouble(e));
             }
-            t.columnas.add(r);
+            r.setData(l);
+            t.setColumnas(r);
         }
         entrada.close();
         return t;
@@ -34,9 +40,12 @@ public class CSV {
         Scanner entrada = new Scanner(new File(fichero));
         String linea = entrada.nextLine();
         String [] cadena = linea.split(",");
+        List<String> lista = new ArrayList<>();
         for(String e : cadena){
-            t.headers.add(e);
+            lista.add(e);
         }
+        t.setHeaders(lista);
+
         while(entrada.hasNextLine()){
             r = new RowWithLabel();
             linea = entrada.nextLine();

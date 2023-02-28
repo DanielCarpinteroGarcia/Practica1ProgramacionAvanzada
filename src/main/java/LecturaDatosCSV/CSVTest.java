@@ -43,6 +43,9 @@ class CSVTest {
 
     @org.junit.jupiter.api.Test
     void readTableWithLabels() {
-        fail();
+            //Aquí solo comprobamos si el número que se asigna a cada fila es correcto,
+            // el resto de comprobaciones ya están realizadas en el primer test.
+            TableWithLabels obtenido = new TableWithLabels();
+
     }
 }

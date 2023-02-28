@@ -1,8 +1,12 @@
 package LecturaDatosCSV;
 
 public class RowWithLabel extends Row{
-    public int numberClass;
+    private int numberClass;
     public int getNumberClass(){
         return numberClass;
+    }
+
+    public void setNumberClass(int n){
+        numberClass = n;
     }
 }
