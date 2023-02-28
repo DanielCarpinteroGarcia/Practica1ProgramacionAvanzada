@@ -16,12 +16,12 @@ class CSVTest {
         Table obtenido = objeto.readTable(fichero);
 
         //Número de ejemplares o filas leídos.
-        assertEquals(25, obtenido.columnas.size());
+        assertEquals(25, obtenido.getColumnas().size());
 
         //Número de columnas leído.
         int nColumnas = 0;
-        for(Row r: obtenido.columnas){
-            nColumnas += r.data.size();
+        for(Row r: obtenido.getColumnas()){
+            nColumnas += r.getData().size();
         }
         assertEquals(50, nColumnas);
 
@@ -29,13 +29,13 @@ class CSVTest {
         List<String> l = new ArrayList<>();
         l.add("Miles");
         l.add("Dollars");
-        assertEquals(l, obtenido.headers);
+        assertEquals(l, obtenido.getheaders());
 
         //Recuperar contenidos de las tablas guardadas.
         List<Double> resul = new ArrayList<>();
         resul.add(1211.0);
         resul.add(1802.0);
-        List<Double> obt = obtenido.getRowAt(0).data;
+        List<Double> obt = obtenido.getRowAt(0).getData();
         assertEquals(resul, obt);
 
         //En este test no se comprueba si el número que se le asigna a cada fila es correcto ya que este método no guarda números de fila.

@@ -51,12 +51,14 @@ public class CSV {
             linea = entrada.nextLine();
             cadena = linea.split(",");
             int i;
+            List<Double> l = new ArrayList<>();
             for(i = 0; i < cadena.length - 1; i++){
-                r.data.add(Double.parseDouble(cadena[i]));
+                l.add(Double.parseDouble(cadena[i]));
             }
-            r.numberClass = t.labelsToIndex.size();
-            t.columnas.add(r);
-            t.labelsToIndex.put(cadena[i], r.numberClass);
+            r.setData(l);
+            r.setNumberClass(t.getLabelsToIndex().size());
+            t.setColumnas(r);
+            t.setLabelsToIndex(cadena[i], r.getNumberClass());
         }
         return t;
     }
