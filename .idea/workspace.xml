@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3546173-7496-48b1-b18c-142a5021d4e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AlgoritmoKNN/AlgoritmoKNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AlgoritmoKNN/AlgoritmoKNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AlgoritmoKNN/AlgoritmoKNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AlgoritmoKNN/AlgoritmoKNNTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaDatosCSV/CSV.java" afterDir="false" />
-    </list>
+    <list default="true" id="e3546173-7496-48b1-b18c-142a5021d4e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
