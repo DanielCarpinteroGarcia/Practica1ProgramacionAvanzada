@@ -19,7 +19,7 @@ public class Table {
     }
 
     public Row getRowAt(int rowNumber){
-        return null;
+        return data.get(rowNumber);
     }
 
     public List<String> getHeaders() {
