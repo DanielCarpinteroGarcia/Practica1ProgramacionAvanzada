@@ -61,7 +61,7 @@ public class CSV {
                 if(!labelsToIndex.containsKey(label)) {
                     labelsToIndex.put(label,numberClass);
                 }
-                rows.add(new RowWithLabel(data,numberClass));
+                rows.add(new RowWithLabel(data, labelsToIndex.get(label)));
 
             }
         } catch (FileNotFoundException e) {

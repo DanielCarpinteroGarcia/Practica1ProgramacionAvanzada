@@ -20,7 +20,6 @@ public class CSVTest {
 
         //Número de ejemplares o filas leídos.
         assertEquals(25, obtenido.getRows().size());
-        System.out.println("25 == " + obtenido.getRows().size());
 
         //Número de columnas leído.
         int nColumnas = 0;
@@ -28,7 +27,6 @@ public class CSVTest {
             nColumnas += r.getData().size();
         }
         assertEquals(50, nColumnas);
-        System.out.println("50 == " + nColumnas);
 
         //Nombre de las etiquetas de las cabeceras.
         List<String> l = new ArrayList<>();
@@ -42,7 +40,6 @@ public class CSVTest {
         resul.add(1802.0);
         List<Double> obt = obtenido.getRowAt(0).getData();
         assertEquals(resul, obt);
-        System.out.println(resul + "==" + obt);
 
         //En este test no se comprueba si el número que se le asigna a cada fila es correcto ya que este método no guarda números de fila.
     }
@@ -55,10 +52,7 @@ public class CSVTest {
         String fichero2 = "iris.csv";
         TableWithLabels obtenido = objeto.readTableWithLabels(fichero2);
 
-        assertEquals(1, obtenido.getRowAt(2).getNumberClass());
-        assertEquals(2, obtenido.getRowAt(55).getNumberClass());
-        System.out.println("1 == " + obtenido.getRowAt(2).getNumberClass());
-        System.out.println("2 == " + obtenido.getRowAt(55).getNumberClass());
-        System.out.println(obtenido.getRowAt(2).toString());
+        assertEquals(0, obtenido.getRowAt(2).getNumberClass());
+        assertEquals(1, obtenido.getRowAt(55).getNumberClass());
     }
 }

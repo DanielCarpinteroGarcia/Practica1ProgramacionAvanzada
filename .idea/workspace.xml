@@ -23,7 +23,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="2M5wmPomVML4tiZZFcP4W0lM6nP" />
+=======
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MKrrQPVREphS8w4uwZ1J19bCOW" />
+>>>>>>> Stashed changes
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +44,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+=======
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;
+>>>>>>> Stashed changes
   }
 }</component>
   <component name="RunManager" selected="JUnit.CSVTest">
@@ -82,12 +100,18 @@
       <created>1677070913183</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
       <updated>1677070913183</updated>
       <workItem from="1677675220375" duration="462000" />
       <workItem from="1677684291147" duration="2056000" />
       <workItem from="1677750063043" duration="22000" />
       <workItem from="1677750096250" duration="25000" />
-      <workItem from="1677750153576" duration="11714000" />
+      <workItem from="1677750153576" duration="13736000" />
+=======
+      <updated>1677527314154</updated>
+      <workItem from="1677772995846" duration="55000" />
+      <workItem from="1677773083928" duration="39000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

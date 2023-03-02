@@ -26,5 +26,9 @@ public class TableWithLabels extends Table{
         return (RowWithLabel) super.getRowAt(rowNumber);
     }
 
+    public Map<String,Integer> getLabelsToIndex() {
+        return this.labelsToIndex;
+    }
+
 
 }
