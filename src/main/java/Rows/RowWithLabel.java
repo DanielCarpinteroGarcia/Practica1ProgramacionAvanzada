@@ -14,6 +14,6 @@ public class RowWithLabel extends Row {
     }
 
     public int getNumberClass() {
-        return numberClass;
+        return this.numberClass;
     }
 }

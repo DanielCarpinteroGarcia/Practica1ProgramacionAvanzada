@@ -13,9 +13,12 @@ public class Row {
         this.data = data;
     }
 
-    public List<Double> getData(){
-        return data;
+    public List<Double> getData() {
+        return this.data;
     }
+
+
+
 }
 
 

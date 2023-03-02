@@ -6,25 +6,33 @@ import java.util.List;
 
 public class Table {
     private List<String> headers;
-    private List<Row> data;
+    private List<Row> rows;
 
     public Table() {
         this.headers = new ArrayList<>();
-        this.data = new ArrayList<>();
+        this.rows = new ArrayList<>();
     }
 
-    public Table(List<String> headers, List<Row> data) {
+    public Table(List<String> headers, List<Row> rows) {
         this.headers = headers;
-        this.data = data;
+        this.rows = rows;
     }
 
     public Row getRowAt(int rowNumber){
-        return data.get(rowNumber);
+        return rows.get(rowNumber);
     }
 
-    public List<String> getHeaders() {
+   public List<Row> getRows() {
+        return this.rows;
+   }
+
+   public List<String> getHeaders() {
         return this.headers;
-    }
+   }
+
+
+
+
 
 }
 

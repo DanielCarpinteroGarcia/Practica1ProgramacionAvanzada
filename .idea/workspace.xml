@@ -36,6 +36,45 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RunManager" selected="JUnit.CSVTest">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="METHOD_NAME" value="readTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CSVTest" />
+        <item itemvalue="JUnit.CSVTest.readTable" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,7 +87,7 @@
       <workItem from="1677684291147" duration="2056000" />
       <workItem from="1677750063043" duration="22000" />
       <workItem from="1677750096250" duration="25000" />
-      <workItem from="1677750153576" duration="841000" />
+      <workItem from="1677750153576" duration="11714000" />
     </task>
     <servers />
   </component>
