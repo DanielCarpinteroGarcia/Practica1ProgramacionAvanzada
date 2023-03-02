@@ -47,12 +47,12 @@ public class CSV {
             for(i = 0; i < cadena.length - 1; i++){
                 r.setData(Double.parseDouble(cadena[i]));
             }
-            r.setNumberClass(c);
-            t.setColumnas(r);
             if(!t.getLabelsToIndex().containsKey(cadena[i])){
-                c++;
+                r.setNumberClass(c);
                 t.setLabelsToIndex(cadena[i], c);
+                c++;
             }
+            t.setColumnas(r);
         }
         return t;
     }
