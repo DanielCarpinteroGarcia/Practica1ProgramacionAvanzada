@@ -6,15 +6,13 @@ import java.util.Scanner;
 
 public class CSV {
     public Table readTable(String fichero) throws FileNotFoundException {
-        Table t = new Table();
-        Row r;
+        Table t = new Table(); Row r;
         Scanner entrada = new Scanner(new File(fichero));
         String linea = entrada.nextLine();
         String [] cadena = linea.split(",");
         for(String e : cadena){
             t.setHeaders(e);
         }
-
         while(entrada.hasNextLine()){
             r = new Row();
             linea = entrada.nextLine();
@@ -29,15 +27,13 @@ public class CSV {
     }
 
     public TableWithLabels readTableWithLabels(String fichero) throws FileNotFoundException {
-        TableWithLabels t = new TableWithLabels();
-        RowWithLabel r;
+        TableWithLabels t = new TableWithLabels(); RowWithLabel r;
         Scanner entrada = new Scanner(new File(fichero));
         String linea = entrada.nextLine();
         String [] cadena = linea.split(",");
         for(String e : cadena){
             t.setHeaders(e);
         }
-
         int c = 0;
         while(entrada.hasNextLine()){
             r = new RowWithLabel();
