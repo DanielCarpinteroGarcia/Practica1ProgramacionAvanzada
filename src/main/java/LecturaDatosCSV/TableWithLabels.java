@@ -6,7 +6,7 @@ import java.util.Map;
 public class TableWithLabels extends Table{
     private Map<String, Integer> labelsToIndex = new HashMap<>();
     public RowWithLabel getRowAt(int pos){
-        return (RowWithLabel) getColumnas().get(pos);
+        return (RowWithLabel) getDatos().get(pos);
     }
 
     public Map<String, Integer> getLabelsToIndex(){

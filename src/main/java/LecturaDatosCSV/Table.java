@@ -14,7 +14,7 @@ public class Table {
         return headers;
     }
 
-    public List<Row> getColumnas(){
+    public List<Row> getDatos(){
         return columnas;
     }
 

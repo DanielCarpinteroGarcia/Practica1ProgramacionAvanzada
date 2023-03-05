@@ -1,6 +1,5 @@
 package AlgoritmoKNN;
 
-import LecturaDatosCSV.Row;
 import LecturaDatosCSV.RowWithLabel;
 import LecturaDatosCSV.TableWithLabels;
 
@@ -16,7 +15,7 @@ public class AlgoritmoKNN {
         TableWithLabels t = getT();
         double menor = 1000000;
         int clase = -1;
-        for(int i = 0; i < t.getColumnas().size(); i++){
+        for(int i = 0; i < t.getDatos().size(); i++){
             RowWithLabel r = t.getRowAt(i);
             List<Double> l = r.getData();
             double dist = 0;

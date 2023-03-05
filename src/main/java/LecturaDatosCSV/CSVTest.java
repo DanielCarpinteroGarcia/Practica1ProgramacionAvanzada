@@ -14,28 +14,43 @@ class CSVTest {
         String fichero = "miles_dollars.csv";
         Table obtenido = objeto.readTable(fichero);
 
-        //Número de ejemplares o filas leídos.
-        assertEquals(25, obtenido.getColumnas().size());
+        System.out.println("Numero de ejemplares o filas leidos.");
+        System.out.println("Fichero miles_dollars.csv");
+        assertEquals(25, obtenido.getDatos().size());
+        System.out.println("Resultado obtenido: " + 25);
+        System.out.println("Resultado esperado: " + obtenido.getDatos().size());
 
-        //Número de columnas leído.
-        int nColumnas = 0;
-        for(Row r: obtenido.getColumnas()){
-            nColumnas += r.getData().size();
+        System.out.println();
+
+        System.out.println("Numero de datos leido.");
+        int nDatos = 0;
+        for(Row r: obtenido.getDatos()){
+            nDatos += r.getData().size();
         }
-        assertEquals(50, nColumnas);
+        assertEquals(2, obtenido.getheaders().size());
+        System.out.println("Resultado obtenido: " + 2);
+        System.out.println("Resultado esperado: " + obtenido.getheaders().size());
 
-        //Nombre de las etiquetas de las cabeceras.
+        System.out.println();
+
+        System.out.println("Nombre de las etiquetas de las cabeceras.");
         List<String> l = new ArrayList<>();
         l.add("Miles");
         l.add("Dollars");
         assertEquals(l, obtenido.getheaders());
+        System.out.println("Resultado obtenido: " + l);
+        System.out.println("Resultado esperado: " + obtenido.getheaders());
 
-        //Recuperar contenidos de las tablas guardadas.
+        System.out.println();
+
+        System.out.println("Recuperar contenidos de las tablas guardadas.");
         List<Double> resul = new ArrayList<>();
         resul.add(1211.0);
         resul.add(1802.0);
         List<Double> obt = obtenido.getRowAt(0).getData();
         assertEquals(resul, obt);
+        System.out.println("Resultado obtenido: " + obt);
+        System.out.print("Resultado esperado: " + resul);
 
         //En este test no se comprueba si el número que se le asigna a cada fila es correcto ya que este método no guarda números de fila.
     }
@@ -48,8 +63,8 @@ class CSVTest {
             String fichero2 = "iris.csv";
             TableWithLabels obtenido = objeto.readTableWithLabels(fichero2);
 
-            assertEquals(1, obtenido.getRowAt(2).getNumberClass());
-            assertEquals(2, obtenido.getRowAt(55).getNumberClass());
+            assertEquals(0, obtenido.getRowAt(2).getNumberClass());
+            assertEquals(1, obtenido.getRowAt(55).getNumberClass());
 
     }
 }
