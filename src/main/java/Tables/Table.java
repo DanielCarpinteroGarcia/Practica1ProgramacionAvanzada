@@ -8,11 +8,6 @@ public class Table {
     private List<String> headers;
     private List<Row> rows;
 
-    public Table() {
-        this.headers = new ArrayList<>();
-        this.rows = new ArrayList<>();
-    }
-
     public Table(List<String> headers, List<Row> rows) {
         this.headers = headers;
         this.rows = rows;

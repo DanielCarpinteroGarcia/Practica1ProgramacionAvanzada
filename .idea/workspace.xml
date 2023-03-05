@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28545bc-efd4-4e4d-9b59-be7f2895437f" name="Changes" comment="" />
+    <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +23,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-<<<<<<< Updated upstream
-  <component name="ProjectId" id="2M5wmPomVML4tiZZFcP4W0lM6nP" />
-=======
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,27 +31,22 @@
     </option>
   </component>
   <component name="ProjectId" id="2MKrrQPVREphS8w4uwZ1J19bCOW" />
->>>>>>> Stashed changes
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-<<<<<<< Updated upstream
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
-=======
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;
->>>>>>> Stashed changes
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.5586207"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CSVTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.KNNTest.estimate">
     <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica1ProgramacionAvanzada" />
       <extension name="coverage">
@@ -86,8 +78,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
+      <option name="METHOD_NAME" value="estimate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KNNTest.estimate" />
+        <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.CSVTest" />
         <item itemvalue="JUnit.CSVTest.readTable" />
       </list>
@@ -100,18 +125,14 @@
       <created>1677070913183</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< Updated upstream
-      <updated>1677070913183</updated>
+      <updated>1677527314154</updated>
       <workItem from="1677675220375" duration="462000" />
       <workItem from="1677684291147" duration="2056000" />
       <workItem from="1677750063043" duration="22000" />
       <workItem from="1677750096250" duration="25000" />
       <workItem from="1677750153576" duration="13736000" />
-=======
-      <updated>1677527314154</updated>
       <workItem from="1677772995846" duration="55000" />
       <workItem from="1677773083928" duration="39000" />
->>>>>>> Stashed changes
     </task>
     <servers />
   </component>

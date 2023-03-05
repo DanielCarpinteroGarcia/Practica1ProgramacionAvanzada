@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class CSV {
-    public static Table readTable(String nombreFichero) throws FileNotFoundException {
+    public static Table readTable(String nombreFichero) {
         List<String> headers = new ArrayList<>();
         List<Row> rows = new ArrayList<>();
 
@@ -36,7 +36,7 @@ public class CSV {
         return new Table(headers,rows);
     }
 
-    public static TableWithLabels readTableWithLabels(String nombreFichero) throws FileNotFoundException {
+    public static TableWithLabels readTableWithLabels(String nombreFichero) {
         List<String> headers = new ArrayList<>();
         List<Row> rows = new ArrayList<>();
         Map<String,Integer> labelsToIndex = new HashMap<>();
@@ -55,7 +55,6 @@ public class CSV {
                     data.add(Double.parseDouble(campos[i]));
                 }
 
-
                 String label = campos[campos.length - 1];
                 int numberClass = labelsToIndex.size();
                 if(!labelsToIndex.containsKey(label)) {
@@ -65,11 +64,9 @@ public class CSV {
 
             }
         } catch (FileNotFoundException e) {
-            System.exit(0);
+            System.out.println("Fichero no encontrado");
         }
-
         return new TableWithLabels(headers,rows,labelsToIndex);
-
     }
 
 }
