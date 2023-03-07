@@ -4,23 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28545bc-efd4-4e4d-9b59-be7f2895437f" name="Changes" comment="" />
+    <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2M5wmPomVML4tiZZFcP4W0lM6nP" />
+  <component name="ProjectId" id="2MKrrQPVREphS8w4uwZ1J19bCOW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,9 +39,85 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.5586207"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.KNNTest.estimate">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="METHOD_NAME" value="readTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
+      <option name="METHOD_NAME" value="estimate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.KNNTest.estimate" />
+        <item itemvalue="JUnit.KNNTest" />
+        <item itemvalue="JUnit.CSVTest" />
+        <item itemvalue="JUnit.CSVTest.readTable" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,8 +125,29 @@
       <created>1677070913183</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677070913183</updated>
+      <updated>1677527314154</updated>
+      <workItem from="1677675220375" duration="462000" />
+      <workItem from="1677684291147" duration="2056000" />
+      <workItem from="1677750063043" duration="22000" />
+      <workItem from="1677750096250" duration="25000" />
+      <workItem from="1677750153576" duration="13736000" />
+      <workItem from="1677772995846" duration="55000" />
+      <workItem from="1677773083928" duration="39000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
