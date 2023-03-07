@@ -4,6 +4,7 @@ import Rows.RowWithLabel;
 import Tables.TableWithLabels;
 
 import java.util.List;
+import java.util.Random;
 
 public class KNN {
 
