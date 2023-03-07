@@ -36,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.5586207"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.KNNTest.estimate">
     <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica1ProgramacionAvanzada" />
@@ -121,7 +121,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b28545bc-efd4-4e4d-9b59-be7f2895437f" name="Changes" comment="" />
+      <changelist id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="" />
       <created>1677070913183</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -133,6 +133,7 @@
       <workItem from="1677750153576" duration="13736000" />
       <workItem from="1677772995846" duration="55000" />
       <workItem from="1677773083928" duration="39000" />
+      <workItem from="1678184514529" duration="3746000" />
     </task>
     <servers />
   </component>
