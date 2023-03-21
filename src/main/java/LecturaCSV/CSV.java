@@ -33,7 +33,7 @@ public class CSV {
             System.exit(0);
         }
 
-        return new Table(headers,rows);
+        return new Table();
     }
 
     public static TableWithLabels readTableWithLabels(String nombreFichero) {
