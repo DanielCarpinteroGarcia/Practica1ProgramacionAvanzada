@@ -47,7 +47,7 @@
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CSVTest.readTable (1)">
+  <component name="RunManager" selected="JUnit.CSVTest.readTableWithLabels">
     <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica1ProgramacionAvanzada" />
       <extension name="coverage">
@@ -79,8 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
+    <configuration name="CSVTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="LecturaCSV.*" />
@@ -89,7 +89,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="LecturaCSV" />
       <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
-      <option name="METHOD_NAME" value="readTable" />
+      <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
         <item itemvalue="JUnit.CSVTest.readTable (1)" />
         <item itemvalue="JUnit.KNNTest.estimate" />
         <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.CSVTest" />
-        <item itemvalue="JUnit.CSVTest.readTable" />
       </list>
     </recent_temporary>
   </component>

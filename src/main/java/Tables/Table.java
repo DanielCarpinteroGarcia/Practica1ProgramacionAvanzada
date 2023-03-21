@@ -18,6 +18,14 @@ public class Table {
         return rows.get(rowNumber);
     }
 
+    public List<Row> getRows() {
+        return this.rows;
+    }
+
+    public List<String> getHeaders() {
+        return this.headers;
+    }
+
     public void addHeaders(String[] list) {
         this.headers.addAll(Arrays.asList(list));
     }
