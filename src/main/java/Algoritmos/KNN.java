@@ -24,6 +24,7 @@ public class KNN {
             for(int j = 0; j < list.size(); j++){
                 distancia += distancia(data.get(j), list.get(j));
             }
+            distancia = Math.sqrt(distancia);
             if(distancia < menor){
                 menor = distancia;
                 numberClass = row.getNumberClass();
@@ -33,7 +34,7 @@ public class KNN {
     }
 
     public double distancia(double num1, double num2){
-        return Math.sqrt(Math.pow(num1 - num2, 2));
+        return (Math.pow(num1 - num2, 2));
     }
 
 }
