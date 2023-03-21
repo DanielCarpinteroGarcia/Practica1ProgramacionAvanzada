@@ -1,8 +1,11 @@
 package Algoritmos;
 
+import Rows.Row;
+import Rows.RowWithLabel;
 import Tables.Table;
 import Tables.TableWithLabels;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -24,13 +27,17 @@ public class KMeans {
     }
 
     public void train(Table datos){
-        Random random = new Random(seed);
+        List<Row> representantes = new ArrayList<>();
         int tam = datos.getRows().size();
-        int representante = random.nextInt(tam);
-        int representante2 = random.nextInt(tam);
-        int representante3 = random.nextInt(tam);
+        for(int i = 0; i < 3; i++){
+            Random random = new Random(seed);
+            Row representante = datos.getRowAt(random.nextInt(tam));
+            representantes.add(representante);
+        }
 
         
+
+
 
 
     }
