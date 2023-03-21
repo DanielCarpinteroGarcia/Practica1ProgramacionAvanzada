@@ -25,8 +25,13 @@ public class KMeans {
 
     public void train(Table datos){
         Random random = new Random(seed);
-        int representante = random.nextInt(datos.getRows().size());
+        int tam = datos.getRows().size();
+        int representante = random.nextInt(tam);
+        int representante2 = random.nextInt(tam);
+        int representante3 = random.nextInt(tam);
+
         
+
 
     }
 
