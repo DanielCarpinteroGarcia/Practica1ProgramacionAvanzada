@@ -23,18 +23,11 @@ public class KMeans {
         Random random = new Random(seed);
         List<Row> representantes = new ArrayList<>();
 
-        List<Integer> listIndex = new ArrayList<>();
-        for(int i = 0; i<datos.getRows().size(); i++ ) {
-            listIndex.add(i);
-        }
-
-        Collections.shuffle(listIndex,random);
         for(int i = 0; i<numClusters; i++) {
-            representantes.add(datos.getRowAt(listIndex.get(i)));
+            representantes.add(datos.getRowAt(random.nextInt() * datos.getRows().size()));
         }
 
         for(int i = 0; i< numIterations; i++) {
-            
 
         }
     }
@@ -43,10 +36,5 @@ public class KMeans {
     return null;
     }
 
-    private List<Row> representantes( Table datos ) {
-
-
-    return null;
-    }
 
 }
