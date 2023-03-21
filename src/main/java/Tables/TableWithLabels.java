@@ -10,10 +10,9 @@ import java.util.Map;
 public class TableWithLabels extends Table{
     private Map<String,Integer> labelsToIndex;
 
-    public TableWithLabels(List<String> headers, List<Row> rows, Map<String,Integer> labelsToIndex) {
-        super(headers,rows);
-        this.labelsToIndex = labelsToIndex;
-
+    public TableWithLabels() {
+        super();
+        this.labelsToIndex = new HashMap<>();
     }
 
     @Override
@@ -21,8 +20,12 @@ public class TableWithLabels extends Table{
         return (RowWithLabel) super.getRowAt(rowNumber);
     }
 
-    public Map<String,Integer> getLabelsToIndex() {
-        return this.labelsToIndex;
+    public void addRow(List<Double> data,String label) {
+        int numberClass = this.labelsToIndex.size();
+        if(!this.labelsToIndex.containsKey(label)) {
+            this.labelsToIndex.put(label,numberClass);
+        }
+        this.getRows().add(new RowWithLabel(data,labelsToIndex.get(label)));
     }
 
 }
