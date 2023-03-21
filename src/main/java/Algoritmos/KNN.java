@@ -17,22 +17,24 @@ public class KNN {
         double menor = 1000000;
         int numberClass = -1;
         for(int i = 0; i < table.getRows().size(); i++){
-            RowWithLabel row = table.getRowAt(i);
-            List<Double> list = row.getData();
-            double distancia = 0;
-            for(int j = 0; j < list.size(); j++){
-                distancia += distancia(data.get(j), list.get(j));
+            double distancia = 0.0;
+            for(int j = 0; j < data.size(); j++){
+                distancia += distancia(table.getRowAt(i).getData(),data);
             }
-            if(distancia < menor){
+            if(distancia <= menor){
                 menor = distancia;
-                numberClass = row.getNumberClass();
+                numberClass = table.getRowAt(i).getNumberClass();
             }
         }
         return numberClass;
     }
 
-    public double distancia(double num1, double num2){
-        return Math.sqrt(Math.pow(num1 - num2, 2));
+    public double distancia(List<Double> list1, List<Double> list2){
+        double resultado = 0.0;
+        for(int i = 0; i<list1.size();i++) {
+            resultado += Math.pow(list1.get(i) - list2.get(i),2);
+        }
+        return Math.sqrt(resultado);
     }
 
 }
