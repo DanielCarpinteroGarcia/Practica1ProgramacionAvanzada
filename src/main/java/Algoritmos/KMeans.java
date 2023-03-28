@@ -15,6 +15,8 @@ public class KMeans {
     private int numIterations;
     private int seed;
 
+    private List<Row> representantes;
+
     public KMeans(int numClusters, int numIterations, long seed){
         numClusters = numClusters;
         numIterations = numIterations;
