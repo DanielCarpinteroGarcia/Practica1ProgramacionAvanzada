@@ -24,7 +24,7 @@ public class KMeans {
     }
 
     public Integer estimate(List<Double> dato){
-
+        return null;
     }
 
     public void train(Table datos){
@@ -46,7 +46,7 @@ public class KMeans {
             Row r1 = d.getRowAt(i);
             for(int j = 0; j < representantes.size(); j++){
                 Row r2 = representantes.get(j);
-                distancia += distancia(d.getRowAt(i), representantes.get(j));
+                distancia = distancia(d.getRowAt(i), representantes.get(j));
                 if(distancia < menor){
                     mas_cercano = j;
                 }
@@ -58,11 +58,9 @@ public class KMeans {
     public double distancia(Row row1, Row row2){
         int resul = 0;
         for(int i = 0; i < row1.getData().size(); i++){
-            
+            resul += Math.pow(row1.getData().get(i) - row2.getData().get(i),2);
         }
-        resul += Math.pow();
-
-        return resul;
+        return Math.sqrt(resul);
     }
 
 
