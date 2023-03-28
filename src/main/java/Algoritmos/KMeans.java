@@ -38,12 +38,17 @@ public class KMeans {
     }
 
     public int asignar_grupo(Table d){
-        double distancia;
+        double menor = 100000000;
+        double distancia = 0;
+        List<>
         for(int i = 0; i < d.getRows().size(); i++){
             Row r1 = d.getRowAt(i);
             for(int j = 0; j < representantes.size(); j++){
                 Row r2 = representantes.get(j);
-                distancia = distancia();
+                distancia += distancia(d.getRowAt(i), representantes.get(j));
+                if(distancia < menor){
+
+                }
             }
         }
     }
