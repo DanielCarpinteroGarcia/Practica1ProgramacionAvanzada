@@ -22,6 +22,10 @@ public class Table {
         return this.rows;
     }
 
+    public List<Double> getData(int indexRow) {
+        return this.rows.get(indexRow).getData();
+    }
+
     public List<String> getHeaders() {
         return this.headers;
     }

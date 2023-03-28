@@ -3,21 +3,18 @@ package Algoritmos;
 import Rows.Row;
 import Tables.Table;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class KMeans {
     private int numClusters;
     private int numIterations;
     private long seed;
-    private List<Row> representantes;
+    private List<Row> representantes = new ArrayList<>();
 
-    public KMeans(int numClusters, int numIterations, long seed, List<Row> representantes) {
+    public KMeans(int numClusters, int numIterations, long seed) {
         this.numClusters = numClusters;
         this.numIterations = numIterations;
         this.seed = seed;
-        this.representantes = new ArrayList<>(numClusters);
     }
 
     public void train(Table datos) {
@@ -26,29 +23,50 @@ public class KMeans {
             representantes.add(datos.getRowAt(random.nextInt() * datos.getRows().size()));
         }
 
-        int[] asignaciones;
+        Integer[] asignacionesGrupos = new Integer[datos.getRows().size()];
         for(int i = 0; i< numIterations; i++) {
-
+            for(int j = 0; j<datos.getRows().size(); j++) {
+                asignacionesGrupos[j] = asignarGrupo(datos.getData(j));
+            }
+            calculoCentroide(asignacionesGrupos,datos);
         }
     }
 
     public Integer estimate(List<Double> dato) {
-    return null;
+        return asignarGrupo(dato);
     }
 
-    public int[] asignarGrupos(Table data) {
-        int[] indiceGrupo = new int[data.getRows().size()];
-        double menor = 1000000;
-        for(int i = 0; i < data.getRows().size(); i++) {
-            double distancia = 0;
-            for(int j = 0; j < representantes.size(); j++){
-                distancia += distancia(data.getRowAt(i).getData(),representantes.get(j).getData());
-                if(distancia <= menor){
-                    indiceGrupo[i] = j;
-                }
+    public Integer asignarGrupo(List<Double> dato) {
+        Integer rep = 0;
+        double menor = distancia(dato,representantes.get(0).getData());
+
+        double distancia = 0;
+        for(int i = 0; i < representantes.size(); i++){
+            distancia = distancia(dato,representantes.get(i).getData());
+            if(distancia <= menor){
+                menor = distancia;
+                rep = i;
             }
         }
-        return indiceGrupo;
+        return rep;
+    }
+
+    public void calculoCentroide(Integer[] asignacionGrupos, Table datos) {
+        Map<Integer,Double> centroides = new HashMap<>();
+        for( int i = 0; i < representantes.size(); i++) {
+            centroides.put(i,0.0);
+        }
+        for( int i = 0; i < asignacionGrupos.length; i++) {
+            int grupo = asignacionGrupos[i];
+
+            
+
+
+        }
+
+
+
+
     }
     public double distancia(List<Double> list1, List<Double> list2){
         double resultado = 0.0;
