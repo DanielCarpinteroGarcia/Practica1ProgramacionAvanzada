@@ -23,7 +23,7 @@ public class KMeans {
 
 
     public Integer estimate(List<Double> dato){
-        int grupo = asignar_grupo();
+
     }
 
     public void train(Table datos){
@@ -34,14 +34,15 @@ public class KMeans {
             Row representante = datos.getRowAt(random.nextInt(tam));
             representantes.add(representante);
         }
-        for(int j = 0; j < datos.getRows().size(); j++){
-            estimate(datos.getRowAt(j).getData());
-        }
     }
 
     public int asignar_grupo(List<Row> r, Table d){
-        for(){
-
+        for(int i = 0; i < d.getRows().size(); i++){
+            Row r1 = d.getRowAt(i);
+            for(int j = 0; j < r.size(); j++){
+                Row r2 = r.get(j);
+                
+            }
         }
     }
 
