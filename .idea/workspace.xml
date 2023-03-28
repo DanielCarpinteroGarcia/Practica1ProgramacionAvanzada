@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
+    <list default="true" id="f8d789ba-d30c-4968-b98c-be871858bffc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,28 +41,32 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+ Updated upstream
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+ Updated upstream
     &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.prueba">
-    <configuration name="prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algoritmos.prueba" />
-      <module name="ProgramacionAvanzada" />
+  <component name="RunManager" selected="JUnit.CSVTest">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Algoritmos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,7 +135,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.prueba" />
         <item itemvalue="JUnit.KNNTest.estimate" />
         <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.CSVTest" />
