@@ -40,6 +40,7 @@ public class KMeans {
     public int asignar_grupo(Table d){
         double menor = 100000000;
         double distancia = 0;
+        int mas_cercano = -1;
         int [] lista = new int[representantes.size()];
         for(int i = 0; i < d.getRows().size(); i++){
             Row r1 = d.getRowAt(i);
@@ -47,10 +48,11 @@ public class KMeans {
                 Row r2 = representantes.get(j);
                 distancia += distancia(d.getRowAt(i), representantes.get(j));
                 if(distancia < menor){
-                    
+                    mas_cercano = j;
                 }
             }
         }
+        return mas_cercano;
     }
 
     public double distancia(Row row1, Row row2){
