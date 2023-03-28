@@ -56,7 +56,13 @@ public class KMeans {
     }
 
     public double distancia(Row row1, Row row2){
-        
+        int resul = 0;
+        for(int i = 0; i < row1.getData().size(); i++){
+            
+        }
+        resul += Math.pow();
+
+        return resul;
     }
 
 
