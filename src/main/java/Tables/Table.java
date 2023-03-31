@@ -38,6 +38,10 @@ public class Table {
         this.rows.add(new Row(data));
     }
 
+    public int size() {
+        return rows.size();
+    }
+
 
 
 

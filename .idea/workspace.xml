@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeansException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNNTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -159,7 +164,8 @@
       <workItem from="1678266673159" duration="1839000" />
       <workItem from="1678450960118" duration="325000" />
       <workItem from="1679391378596" duration="6603000" />
-      <workItem from="1680025884901" duration="7026000" />
+      <workItem from="1680025884901" duration="7065000" />
+      <workItem from="1680276256270" duration="3881000" />
     </task>
     <servers />
   </component>
