@@ -44,19 +44,24 @@ public class KMeans {
         grupos = new HashMap<>();
         int menor = 100000000;
         double distancia = 0;
-        Row m;
-        int r;
+        int r = -1;
         for(int i = 0; i < representantes.size(); i++){
             distancia = distancia(d, representantes.get(i).getData());
             if(distancia < menor){
-                m = representantes.get(i);
                 r = i;
             }
         }
-        if(!grupos.containsKey(m)){
-            grupos.put(m, );
+        List<Row> lista = new ArrayList<>();
+        Row nuevo = new Row(d);
+        lista.add(nuevo);
+        if(!grupos.containsKey(representantes.get(r))){
+            grupos.put(representantes.get(r), lista);
+        } else {
+            lista = grupos.get(representantes.get(r));
+            lista.add(nuevo);
+            grupos.put(representantes.get(r), lista);
         }
-        return
+        return r;
     }
 
     public double distancia(List<Double> l1, List<Double> l2){
