@@ -1,6 +1,8 @@
 package Algoritmos;
 
-public interface Algorithm {
-    Table<T> train();
-    <T> estimate();
+import Tables.Table;
+
+public interface Algorithm<T> {
+    T train(T d);
+    T estimate(T d);
 }

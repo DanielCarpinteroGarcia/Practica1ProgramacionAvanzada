@@ -1,13 +1,11 @@
 package Algoritmos;
 
 import Rows.Row;
-import Rows.RowWithLabel;
 import Tables.Table;
-import Tables.TableWithLabels;
 
 import java.util.*;
 
-public class KMeans {
+public class KMeans implements Algorithm{
 
     private int numClusters;
     private int numIterations;
@@ -21,10 +19,12 @@ public class KMeans {
         seed = s;
     }
 
+    @Override
     public Integer estimate(List<Double> dato){
         return asignar_grupo(dato);
     }
 
+    @Override
     public void train(Table datos){
         representantes = new ArrayList<>();
         int tam = datos.getRows().size();
@@ -71,6 +71,5 @@ public class KMeans {
         }
         return Math.sqrt(resul);
     }
-
 
 }
