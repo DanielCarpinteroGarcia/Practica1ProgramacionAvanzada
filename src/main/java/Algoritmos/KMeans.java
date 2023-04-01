@@ -11,6 +11,8 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
     private long seed;
     private List<Row> representantes = new ArrayList<>();
 
+    public KMeans() {
+    }
     public KMeans(int numClusters, int numIterations, long seed) {
         this.numClusters = numClusters;
         this.numIterations = numIterations;
