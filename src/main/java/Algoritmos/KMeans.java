@@ -5,7 +5,7 @@ import Tables.Table;
 
 import java.util.*;
 
-public class KMeans implements Algorithm{
+public class KMeans implements Algorithm<Table, Integer, List<Double>>{
 
     private int numClusters;
     private int numIterations;
@@ -17,6 +17,14 @@ public class KMeans implements Algorithm{
         numClusters = nc;
         numIterations = ni;
         seed = s;
+    }
+
+    public int getNumClusters(){
+        return numClusters;
+    }
+
+    public int getNumIterations(){
+        return numIterations;
     }
 
     @Override
