@@ -5,9 +5,7 @@ import Rows.RowWithLabel;
 import Tables.Table;
 import Tables.TableWithLabels;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class KMeans {
 
@@ -16,43 +14,37 @@ public class KMeans {
     private int seed;
     private List<Row> representantes;
 
-    public KMeans(int nc, int ni, int s, List<Row> r){
+    public KMeans(int nc, int ni, int s){
         numClusters = nc;
         numIterations = ni;
         seed = s;
-        representantes = r;
     }
 
     public Integer estimate(List<Double> dato){
-        return null;
+        return asignar_grupo(dato);
     }
 
     public void train(Table datos){
-        List<Row> representantes = new ArrayList<>();
+        representantes = new ArrayList<>();
         int tam = datos.getRows().size();
-        for(int i = 0; i < 3; i++){
-            Random random = new Random(seed);
-            Row representante = datos.getRowAt(random.nextInt(tam));
-            representantes.add(representante);
+        for(int j = 0; j < numIterations; j++) {
+            for (int i = 0; i < numClusters; i++) {
+                Random random = new Random(seed);
+                Row representante = datos.getRowAt(random.nextInt(tam));
+                representantes.add(representante);
+            }
+            for(int b = 0; b < datos.getRows().size(); b++){
+                estimate(datos.getRowAt(b).getData());
+            }
         }
     }
 
-    public int asignar_grupo(Table d){
-        double menor = 100000000;
-        double distancia = 0;
-        int mas_cercano = -1;
-        int [] lista = new int[representantes.size()];
-        for(int i = 0; i < d.getRows().size(); i++){
-            Row r1 = d.getRowAt(i);
-            for(int j = 0; j < representantes.size(); j++){
-                Row r2 = representantes.get(j);
-                distancia = distancia(d.getRowAt(i), representantes.get(j));
-                if(distancia < menor){
-                    mas_cercano = j;
-                }
-            }
+    public int asignar_grupo(List<Double> d){
+        Map<Row, List<Row>> grupos = new HashMap<>();
+        int menor = 100000000;
+        for(int i = 0; i < representantes.size(); i++){
+
         }
-        return mas_cercano;
     }
 
     public double distancia(Row row1, Row row2){
