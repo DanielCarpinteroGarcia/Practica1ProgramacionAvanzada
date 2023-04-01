@@ -13,6 +13,7 @@ public class KMeans {
     private int numIterations;
     private int seed;
     private List<Row> representantes;
+    private Map<Row, List<Row>> grupos;
 
     public KMeans(int nc, int ni, int s){
         numClusters = nc;
@@ -40,17 +41,28 @@ public class KMeans {
     }
 
     public int asignar_grupo(List<Double> d){
-        Map<Row, List<Row>> grupos = new HashMap<>();
+        grupos = new HashMap<>();
         int menor = 100000000;
+        double distancia = 0;
+        Row m;
+        int r;
         for(int i = 0; i < representantes.size(); i++){
-
+            distancia = distancia(d, representantes.get(i).getData());
+            if(distancia < menor){
+                m = representantes.get(i);
+                r = i;
+            }
         }
+        if(!grupos.containsKey(m)){
+            grupos.put(m, );
+        }
+        return
     }
 
-    public double distancia(Row row1, Row row2){
+    public double distancia(List<Double> l1, List<Double> l2){
         int resul = 0;
-        for(int i = 0; i < row1.getData().size(); i++){
-            resul += Math.pow(row1.getData().get(i) - row2.getData().get(i),2);
+        for(int i = 0; i < l1.size(); i++){
+            resul += Math.pow(l1.get(i) - l2.get(i),2);
         }
         return Math.sqrt(resul);
     }
