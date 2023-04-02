@@ -49,7 +49,7 @@ public class RecSys {
     private void selectItems(int idxLikedItem, int labelLikedItem, int numRec){
         listaindices  = new ArrayList<>();
         for(int i = 0; i < testData.getRows().size(); i++){
-            if(recomendaciones.get(i) == labelLikedItem){
+            if(recomendaciones.get(i) == labelLikedItem && i != idxLikedItem){
                 listaindices.add(i);
             }
         }
