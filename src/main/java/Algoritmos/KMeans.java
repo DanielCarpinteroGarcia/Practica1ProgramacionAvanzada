@@ -25,14 +25,19 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
             throw new KMeansException("El número Clusters es mayor que el número de Datos");
         }
 
-        Random random = new Random(seed);
+        List<Integer> listaIndices = new ArrayList<>();
+        for(int i = 0; i < datos.size(); i++) {
+            listaIndices.add(i);
+        }
+        Collections.shuffle(listaIndices, new Random(seed));
         for(int i = 0; i<numClusters; i++) {
-            representantes.add(datos.getRowAt(random.nextInt() * datos.getRows().size()));
+            representantes.add(datos.getRowAt(listaIndices.get(i)));
         }
 
         List<Integer> asignacionesGrupos = new ArrayList<>();
         for(int i = 0; i< numIterations; i++) {
-            for(int j = 0; j<datos.getRows().size(); j++) {
+            asignacionesGrupos.clear();
+            for(int j = 0; j<datos.size(); j++) {
                 asignacionesGrupos.add(asignarGrupo(datos.getData(j)));
             }
             calculoCentroide(asignacionesGrupos,datos);
@@ -65,8 +70,8 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
         }
         for( int i = 0; i<asignacionesGrupos.size(); i++) {
             int grupo = asignacionesGrupos.get(i);
-            representantes.set(grupo, sumar(datos.getData(i),representantes.get(i).getData()));
-            tamCentroide.set(grupo, tamCentroide.get(i) + 1);
+            representantes.set(grupo, sumar(datos.getData(i),representantes.get(grupo).getData()));
+            tamCentroide.set(grupo, tamCentroide.get(grupo) + 1);
         }
         for(int i = 0; i < representantes.size(); i++) {
             representantes.set(i, dividir(representantes.get(i).getData(),tamCentroide.get(i)));

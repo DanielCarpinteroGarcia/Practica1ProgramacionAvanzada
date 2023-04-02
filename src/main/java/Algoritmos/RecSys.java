@@ -11,7 +11,7 @@ public class RecSys {
     private List<Integer> estimaciones = new ArrayList<>();
     private List<String> testItemNames;
     private Table testData;
-    private List<String> recomendaciones;
+    private List<String> recomendaciones = new ArrayList<>();
 
     public RecSys(Algorithm algorithm) {
         this.algorithm = algorithm;
@@ -54,14 +54,15 @@ public class RecSys {
         List<Integer> listaEtiquetas = new ArrayList<>();
 
         int i = 0;
-        while( i<estimaciones.size() || i != numRec - 1) {
-            if(estimaciones.get(i).equals(indexLikedItem)) {
+        while(listaEtiquetas.size() != numRec - 1) {
+            if(estimaciones.get(i).equals(labelLikedItem)) {
                 listaEtiquetas.add(i);
             }
+            i++;
         }
 
         for (Integer etiqueta : listaEtiquetas) {
-            if (!testItemNames.get(etiqueta).equals(testItemNames.get(labelLikedItem))){
+            if (!testItemNames.get(etiqueta).equals(testItemNames.get(indexLikedItem))){
                 recomendaciones.add(testItemNames.get(etiqueta));
             }
 
