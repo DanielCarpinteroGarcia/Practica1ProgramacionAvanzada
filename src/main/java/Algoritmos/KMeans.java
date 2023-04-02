@@ -29,6 +29,10 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
         return numIterations;
     }
 
+    public void setRepresentantes(List<Row> representantes) {
+        this.representantes = representantes;
+    }
+
     @Override
     public Integer estimate(List<Double> dato){
         return asignar_grupo(dato);
@@ -47,18 +51,19 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
             for(int b = 0; b < datos.getRows().size(); b++){
                 estimate(datos.getRowAt(b).getData());
             }
-            calcular_centroide();
+            //calcular_centroide();
         }
     }
 
     public int asignar_grupo(List<Double> d){
         grupos = new HashMap<>();
-        int menor = 100000000;
+        double menor = 100000000;
         double distancia = 0;
         int r = -1;
         for(int i = 0; i < representantes.size(); i++){
             distancia = distancia(d, representantes.get(i).getData());
             if(distancia < menor){
+                menor = distancia;
                 r = i;
             }
         }

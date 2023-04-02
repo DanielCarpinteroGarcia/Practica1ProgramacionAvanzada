@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeansTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeansTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/PruebasKMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/PruebasKMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Excepcion/ExcepcionKMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Excepcion/ExcepcionKMeans.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,22 +57,7 @@
       <recent name="Algoritmos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CSVTest.readTableWithLabels">
-    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.KMeansTest">
     <configuration name="CSVTest.readTable (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
@@ -99,6 +86,21 @@
       <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
       <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMeansTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.KMeansTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KMeansTest" />
         <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
         <item itemvalue="JUnit.CSVTest.readTable (1)" />
         <item itemvalue="JUnit.KNNTest.estimate" />
         <item itemvalue="JUnit.KNNTest" />
-        <item itemvalue="JUnit.CSVTest" />
       </list>
     </recent_temporary>
   </component>
