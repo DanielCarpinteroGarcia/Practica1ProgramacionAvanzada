@@ -2,15 +2,9 @@ package Excepcion;
 
 import Algoritmos.KMeans;
 
-public class ExcepcionKMeans<T> {
+public class ExcepcionKMeans<T> extends Exception {
 
     public T anomalia (int k, int n){
-        try {
-            int resta = k - n;
-        } catch () {
-
-        } finally {
-
-        }
+        super();
     }
 }
