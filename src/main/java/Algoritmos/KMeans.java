@@ -45,6 +45,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
             for(int b = 0; b < datos.getRows().size(); b++){
                 estimate(datos.getRowAt(b).getData());
             }
+            calcular_centroide();
         }
     }
 
@@ -73,7 +74,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     }
 
     public void calcular_centroide(){
-
+        double centroide = ;
     }
 
     public double distancia(List<Double> l1, List<Double> l2){
