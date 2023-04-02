@@ -10,7 +10,6 @@ public class RecSys {
 
     private Table trainData;
     private Table testData;
-    private String nameLikedItem;
     private List<String> testItemNames;
     private List<Integer> recomendaciones = new ArrayList<>();
     private Algorithm algorithm;
@@ -19,6 +18,7 @@ public class RecSys {
     public RecSys(Algorithm algorithm){
         this.algorithm = algorithm;
     }
+
     public void train(Table trainData){
         this.trainData = trainData;
         algorithm.train(trainData);
