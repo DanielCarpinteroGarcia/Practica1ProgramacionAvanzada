@@ -14,6 +14,7 @@ public class RecSys {
     private List<String> testItemNames;
     private List<Integer> recomendaciones = new ArrayList<>();
     private Algorithm algorithm;
+    private List<Integer> listaindices;
 
     public RecSys(Algorithm algorithm){
         this.algorithm = algorithm;
@@ -46,11 +47,20 @@ public class RecSys {
     }
 
     private void selectItems(int idxLikedItem, int labelLikedItem, int numRec){
-        
+        listaindices  = new ArrayList<>();
+        for(int i = 0; i < testData.getRows().size(); i++){
+            if(recomendaciones.get(i) == labelLikedItem){
+                listaindices.add(i);
+            }
+        }
     }
 
     private List<String> getNamesSelectedItems(){
-
+        List<String> listanombres = new ArrayList<>();
+        for(int i = 0; i < listaindices.size(); i++){
+            listanombres.add(testItemNames.get(i));
+        }
+        return listanombres;
     }
 
     public List<String> recommend(String nameLikedItem, int numRecommendations){
@@ -58,6 +68,7 @@ public class RecSys {
         Row elemento_idx = testData.getRowAt(idx);
         int lbl = (Integer) algorithm.estimate(elemento_idx.getData());
         selectItems(idx, lbl, numRecommendations);
+        return getNamesSelectedItems();
     }
 
 }
