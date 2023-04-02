@@ -13,6 +13,10 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
 
     public KMeans() {
     }
+
+    public void setRepresentantes(List<Row> representantes) {
+        this.representantes = representantes;
+    }
     public KMeans(int numClusters, int numIterations, long seed) {
         this.numClusters = numClusters;
         this.numIterations = numIterations;
