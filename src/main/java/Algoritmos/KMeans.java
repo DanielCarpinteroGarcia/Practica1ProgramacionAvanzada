@@ -13,6 +13,8 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     private List<Row> representantes;
     private Map<Row, List<Row>> grupos;
 
+    public KMeans(){}
+
     public KMeans(int nc, int ni, int s){
         numClusters = nc;
         numIterations = ni;
