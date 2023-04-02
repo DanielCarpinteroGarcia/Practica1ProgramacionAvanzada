@@ -72,6 +72,10 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
         return r;
     }
 
+    public void calcular_centroide(){
+
+    }
+
     public double distancia(List<Double> l1, List<Double> l2){
         int resul = 0;
         for(int i = 0; i < l1.size(); i++){
