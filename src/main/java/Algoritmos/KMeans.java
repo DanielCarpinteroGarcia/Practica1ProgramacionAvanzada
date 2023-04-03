@@ -42,7 +42,6 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     public void train(Table datos){
         representantes = new ArrayList<>();
         int tam = datos.getRows().size();
-        for(int j = 0; j < numIterations; j++) {
             for (int i = 0; i < numClusters; i++) {
                 Random random = new Random(seed);
                 Row representante = datos.getRowAt(random.nextInt(tam));
@@ -51,8 +50,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
             for(int b = 0; b < datos.getRows().size(); b++){
                 estimate(datos.getRowAt(b).getData());
             }
-            //calcular_centroide();
-        }
+            calcular_centroide();
     }
 
     public int asignar_grupo(List<Double> d){
@@ -81,6 +79,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     }
 
     public void calcular_centroide(){
+        
     }
 
     public double distancia(List<Double> l1, List<Double> l2){
