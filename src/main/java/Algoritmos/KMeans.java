@@ -79,6 +79,13 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     }
 
     public void calcular_centroide(){
+        Iterator<List<Row>> it = grupos.values().iterator();
+        while(it.hasNext()){
+            List<Row> l = it.next();
+            for(Row r: l){
+                
+            }
+        }
 
     }
 
