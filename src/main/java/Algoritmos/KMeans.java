@@ -50,7 +50,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
             for(int b = 0; b < datos.getRows().size(); b++){
                 estimate(datos.getRowAt(b).getData());
             }
-            calcular_centroide();
+            centroide();
     }
 
     public int asignar_grupo(List<Double> d){
@@ -78,7 +78,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
         return r;
     }
 
-    public void calcular_centroide(){
+    public void centroide(){
         Iterator<List<Row>> it = grupos.values().iterator();
         while(it.hasNext()){
             List<Row> l = it.next();
@@ -86,6 +86,10 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
                 
             }
         }
+
+    }
+
+    public void calculo_centroide(){
 
     }
 
