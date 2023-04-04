@@ -1,5 +1,6 @@
 package Algoritmos;
 
+import PatronesDeDiseño.Distance;
 import Rows.Row;
 import Tables.Table;
 
@@ -13,7 +14,16 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     private List<Row> representantes;
     private Map<Row, List<Row>> grupos;
 
+    private Distance distancia;
+
     public KMeans(){}
+
+    public KMeans(int nc, int ni, int s, Distance d){
+        this.numIterations = ni;
+        this.seed = s;
+        this.numClusters = nc;
+        this.distancia = d;
+    }
 
     public KMeans(int nc, int ni, int s){
         numClusters = nc;
@@ -50,7 +60,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
             for(int b = 0; b < datos.getRows().size(); b++){
                 estimate(datos.getRowAt(b).getData());
             }
-            centroide();
+            centroide(datos);
     }
 
     public int asignar_grupo(List<Double> d){

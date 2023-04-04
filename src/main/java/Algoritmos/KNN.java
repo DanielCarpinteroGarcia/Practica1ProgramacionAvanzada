@@ -1,5 +1,7 @@
 package Algoritmos;
 
+import PatronesDeDiseño.Distance;
+import PatronesDeDiseño.EuclideanDistance;
 import Rows.RowWithLabel;
 import Tables.TableWithLabels;
 
@@ -7,8 +9,12 @@ import java.util.List;
 import java.util.Random;
 
 public class KNN {
-
+    private Distance distancia;
     private TableWithLabels table;
+
+    public KNN(Distance d){
+        this.distancia = d;
+    }
 
     public void train(TableWithLabels data){
         this.table = data;
@@ -21,10 +27,7 @@ public class KNN {
             RowWithLabel row = table.getRowAt(i);
             List<Double> list = row.getData();
             double distancia = 0;
-            for(int j = 0; j < list.size(); j++){
-                distancia += distancia(data.get(j), list.get(j));
-            }
-            distancia = Math.sqrt(distancia);
+            distancia = distancia(list, data);
             if(distancia < menor){
                 menor = distancia;
                 numberClass = row.getNumberClass();
@@ -33,8 +36,7 @@ public class KNN {
         return numberClass;
     }
 
-    public double distancia(double num1, double num2){
-        return (Math.pow(num1 - num2, 2));
+    public double distancia(List<Double> list, List<Double> d){
+        distancia = new EuclideanDistance();
     }
-
 }
