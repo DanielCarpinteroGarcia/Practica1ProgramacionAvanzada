@@ -78,7 +78,7 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
         return r;
     }
 
-    public void centroide(){
+    public void centroide(Table d){
         for(int i = 0; i < numIterations; i++){
             Iterator<List<Row>> it = grupos.values().iterator();
             int contador = 0;
@@ -98,7 +98,10 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
                 this.representantes.set(j, new Row(lista));
                 j++;
             }
-            estimate();
+            for(int k = 0; k < d.getRows().size(); k++){
+                estimate(d.getRowAt(k).getData());
+            }
+
         }
     }
 
