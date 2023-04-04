@@ -80,17 +80,23 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
 
     public void centroide(){
         Iterator<List<Row>> it = grupos.values().iterator();
+        int contador = 0;
+        int i = 0;
         while(it.hasNext()){
             List<Row> l = it.next();
+            double x = 0;
+            double y = 0;
+            double z = 0;
             for(Row r: l){
-                
+                x += r.getData().get(0);
+                y += r.getData().get(1);
+                z += r.getData().get(2);
+                contador++;
             }
+            List<Double> lista = new ArrayList<>(Arrays.asList(x/contador, y/contador, z/contador));
+            this.representantes.set(i, new Row(lista));
+            i++;
         }
-
-    }
-
-    public void calculo_centroide(){
-
     }
 
     public double distancia(List<Double> l1, List<Double> l2){
