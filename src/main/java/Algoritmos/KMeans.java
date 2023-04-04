@@ -101,7 +101,6 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
             for(int k = 0; k < d.getRows().size(); k++){
                 estimate(d.getRowAt(k).getData());
             }
-
         }
     }
 
