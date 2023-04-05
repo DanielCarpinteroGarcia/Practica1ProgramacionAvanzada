@@ -1,6 +1,7 @@
 package Algoritmos;
 
 import PatronesDeDiseño.Distance;
+import PatronesDeDiseño.DistanceClient;
 import PatronesDeDiseño.EuclideanDistance;
 import Rows.RowWithLabel;
 import Tables.TableWithLabels;
@@ -8,7 +9,7 @@ import Tables.TableWithLabels;
 import java.util.List;
 import java.util.Random;
 
-public class KNN {
+public class KNN  implements DistanceClient {
     private Distance distancia;
     private TableWithLabels table;
 
@@ -39,5 +40,10 @@ public class KNN {
     public double distancia(List<Double> list, List<Double> d){
         distancia = new EuclideanDistance();
         return distancia.calculateDistance(list, d);
+    }
+
+    @Override
+    public void setDistance(Distance distance) {
+        
     }
 }

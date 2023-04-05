@@ -1,13 +1,14 @@
 package Algoritmos;
 
 import PatronesDeDiseño.Distance;
+import PatronesDeDiseño.DistanceClient;
 import PatronesDeDiseño.EuclideanDistance;
 import Rows.Row;
 import Tables.Table;
 
 import java.util.*;
 
-public class KMeans implements Algorithm<Table, Integer, List<Double>>{
+public class KMeans implements Algorithm<Table, Integer, List<Double>>, DistanceClient {
 
     private int numClusters;
     private int numIterations;
@@ -120,4 +121,8 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
         return distancia.calculateDistance(l1, l2);
     }
 
+    @Override
+    public void setDistance(Distance distance) {
+        
+    }
 }
