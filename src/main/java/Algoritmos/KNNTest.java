@@ -22,14 +22,13 @@ class KNNTest {
         assertEquals(0, objKNN.estimate(list1));
         assertEquals(1, objKNN.estimate(list2));
         assertEquals(0,objKNN.estimate(list3));
-
     }
 
     @Test
     void distancia(){
-        assertEquals( 2.3, objKNN.distancia(3.40, 1.10));
-        assertEquals(0.9, objKNN.distancia(4.3, 5.2), 0.3d);
-        assertEquals(0, objKNN.distancia(0.0, 0.0));
+        assertEquals( 2.3, objKNN.distancia(new ArrayList<>(Arrays.asList(3.40)), new ArrayList<>(Arrays.asList(1.10))), 0.3d);
+        assertEquals(0.9, objKNN.distancia(new ArrayList<>(Arrays.asList(4.3)), new ArrayList<>(Arrays.asList(5.2))), 0.3d);
+        assertEquals(0, objKNN.distancia(new ArrayList<>(Arrays.asList(0.0)), new ArrayList<>(Arrays.asList(0.0))));
     }
 
 }

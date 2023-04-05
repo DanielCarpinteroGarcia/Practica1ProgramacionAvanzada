@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNNTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
       <recent name="Algoritmos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KMeansTest">
+  <component name="RunManager" selected="JUnit.KNNTest">
     <configuration name="CSVTest.readTable (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.KMeansTest" />
         <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
         <item itemvalue="JUnit.CSVTest.readTable (1)" />
         <item itemvalue="JUnit.KNNTest.estimate" />
-        <item itemvalue="JUnit.KNNTest" />
       </list>
     </recent_temporary>
   </component>
