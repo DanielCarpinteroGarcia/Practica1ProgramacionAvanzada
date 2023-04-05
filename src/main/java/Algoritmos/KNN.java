@@ -38,5 +38,6 @@ public class KNN {
 
     public double distancia(List<Double> list, List<Double> d){
         distancia = new EuclideanDistance();
+        return distancia.calculateDistance(list, d);
     }
 }

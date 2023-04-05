@@ -1,6 +1,7 @@
 package Algoritmos;
 
 import PatronesDeDiseño.Distance;
+import PatronesDeDiseño.EuclideanDistance;
 import Rows.Row;
 import Tables.Table;
 
@@ -115,11 +116,8 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>{
     }
 
     public double distancia(List<Double> l1, List<Double> l2){
-        int resul = 0;
-        for(int i = 0; i < l1.size(); i++){
-            resul += Math.pow(l1.get(i) - l2.get(i),2);
-        }
-        return Math.sqrt(resul);
+        distancia = new EuclideanDistance();
+        return distancia.calculateDistance(l1, l2);
     }
 
 }

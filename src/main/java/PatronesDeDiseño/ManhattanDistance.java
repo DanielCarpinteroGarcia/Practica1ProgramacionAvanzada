@@ -10,7 +10,6 @@ public class ManhattanDistance implements Distance{
         for(int j = 0; j < p.size(); j++){
             distancia +=  p.get(j) - q.get(j);
         }
-
         return distancia;
     }
 }
