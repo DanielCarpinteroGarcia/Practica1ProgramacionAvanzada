@@ -13,6 +13,8 @@ public class KNN  implements DistanceClient {
     private Distance distancia;
     private TableWithLabels table;
 
+    public KNN(){}
+
     public KNN(Distance d){
         this.distancia = d;
     }

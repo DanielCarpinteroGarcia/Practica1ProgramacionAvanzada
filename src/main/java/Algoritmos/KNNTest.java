@@ -4,6 +4,7 @@ import LecturaCSV.CSV;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,21 +15,9 @@ class KNNTest {
 
     @Test
     void estimate() {
-        List<Double> list1 = new ArrayList<>();
-        list1.add(4.6);
-        list1.add(3.1);
-        list1.add(1.4);
-        list1.add(0.3);
-        List<Double> list2 = new ArrayList<>();
-        list2.add(7.0);
-        list2.add(3.3);
-        list2.add(4.6);
-        list2.add(1.2);
-        List<Double> list3 = new ArrayList<>();
-        list3.add(0.0);
-        list3.add(0.0);
-        list3.add(0.0);
-        list3.add(0.0);
+        List<Double> list1 = new ArrayList<>(Arrays.asList(4.6, 3.1, 1.4, 0.3));
+        List<Double> list2 = new ArrayList<>(Arrays.asList(7.0, 3.3, 4.6, 1.2));
+        List<Double> list3 = new ArrayList<>(Arrays.asList(0.0, 0.0, 0.0, 0.0));
         objKNN.train(objCSV.readTableWithLabels("iris.csv"));
         assertEquals(0, objKNN.estimate(list1));
         assertEquals(1, objKNN.estimate(list2));
