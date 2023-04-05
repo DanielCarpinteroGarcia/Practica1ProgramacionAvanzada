@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/ManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/ManhattanDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/DistanceClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
