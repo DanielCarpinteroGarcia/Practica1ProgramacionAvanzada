@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="" />
+    <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Distancias/Distance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Distancias/DistanceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Distancias/EuclideanDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Distancias/ManhattanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -56,7 +65,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KMeansTest.estimate">
+  <component name="RunManager" selected="JUnit.KNNTest">
     <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Algoritmos.SongRecSys" />
       <module name="ProgramacionAvanzada" />
@@ -118,8 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Algoritmos.*" />
@@ -128,19 +137,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="Algoritmos" />
       <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
-      <option name="METHOD_NAME" value="estimate" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.KMeansTest.estimate" />
         <item itemvalue="Application.SongRecSys" />
         <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
         <item itemvalue="JUnit.CSVTest.readTable (1)" />
-        <item itemvalue="JUnit.KNNTest.estimate" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +175,7 @@
       <workItem from="1680276256270" duration="4095000" />
       <workItem from="1680336124939" duration="14504000" />
       <workItem from="1680462941654" duration="4381000" />
+      <workItem from="1681292518981" duration="2015000" />
     </task>
     <servers />
   </component>
@@ -201,7 +210,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

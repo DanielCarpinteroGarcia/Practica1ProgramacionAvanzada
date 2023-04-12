@@ -1,5 +1,6 @@
 package Algoritmos;
 
+import Distancias.EuclideanDistance;
 import LecturaCSV.CSV;
 import Tables.Table;
 
@@ -28,7 +29,7 @@ class SongRecSys {
         // Algorithms
         Map<String, Algorithm> algorithms = new HashMap<>();
         algorithms.put("knn",new KNN());
-        algorithms.put("kmeans",new KMeans(15, 200, 4321));
+        algorithms.put("kmeans",new KMeans(15, 200, 4321, new EuclideanDistance()));
 
         // Tables
         Map<String, Table> tables = new HashMap<>();

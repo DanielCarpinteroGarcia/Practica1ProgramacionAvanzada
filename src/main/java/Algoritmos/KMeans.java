@@ -1,26 +1,32 @@
 package Algoritmos;
 
+import Distancias.Distance;
+import Distancias.DistanceClient;
+import Distancias.EuclideanDistance;
 import Rows.Row;
 import Tables.Table;
 
 import java.util.*;
 
-public class KMeans implements Algorithm<Table, Integer, List<Double>> {
+public class KMeans implements DistanceClient, Algorithm<Table, Integer, List<Double>> {
     private int numClusters;
     private int numIterations;
     private long seed;
+    private Distance distancia;
     private List<Row> representantes = new ArrayList<>();
 
     public KMeans() {
+        this.distancia = new EuclideanDistance();
     }
 
     public void setRepresentantes(List<Row> representantes) {
         this.representantes = representantes;
     }
-    public KMeans(int numClusters, int numIterations, long seed) {
+    public KMeans(int numClusters, int numIterations, long seed, Distance distance) {
         this.numClusters = numClusters;
         this.numIterations = numIterations;
         this.seed = seed;
+        this.distancia = distance;
     }
 
     public void train(Table datos) throws KMeansException {
@@ -54,13 +60,13 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
 
     public Integer asignarGrupo(List<Double> dato) {
         Integer rep = 0;
-        double menor = distancia(dato,representantes.get(0).getData());
+        double menor = distancia.calculateDistance(dato,representantes.get(0).getData());
 
-        double distancia = 0;
+        double distance = 0;
         for(int i = 0; i < representantes.size(); i++){
-            distancia = distancia(dato,representantes.get(i).getData());
-            if(distancia <= menor){
-                menor = distancia;
+            distance = distancia.calculateDistance(dato,representantes.get(i).getData());
+            if(distance <= menor){
+                menor = distance;
                 rep = i;
             }
         }
@@ -98,16 +104,10 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
         return new Row(division);
     }
 
-
-    public double distancia(List<Double> list1, List<Double> list2){
-        double resultado = 0.0;
-        for(int i = 0; i<list1.size();i++) {
-            resultado += Math.pow(list1.get(i) - list2.get(i),2);
-        }
-        return Math.sqrt(resultado);
+    @Override
+    public void setDistance(Distance distance) {
+        this.distancia = distance;
     }
-
-
 }
 
 

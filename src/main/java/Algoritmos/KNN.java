@@ -1,14 +1,22 @@
 package Algoritmos;
 
+import Distancias.Distance;
+import Distancias.DistanceClient;
+import Distancias.EuclideanDistance;
 import Rows.RowWithLabel;
 import Tables.TableWithLabels;
 
 import java.util.List;
 
-public class KNN implements Algorithm<TableWithLabels,Integer,List<Double>> {
+public class KNN implements DistanceClient, Algorithm<TableWithLabels,Integer,List<Double>> {
 
     private TableWithLabels table;
+    private Distance distancia;
 
+    public KNN() {
+        this.distancia = new EuclideanDistance();
+
+    }
     public void train(TableWithLabels data){
         this.table = data;
     }
@@ -17,24 +25,21 @@ public class KNN implements Algorithm<TableWithLabels,Integer,List<Double>> {
         double menor = 1000000;
         int numberClass = -1;
         for(int i = 0; i < table.getRows().size(); i++){
-            double distancia = 0.0;
+            double distance = 0.0;
             for(int j = 0; j < data.size(); j++){
-                distancia += distancia(table.getRowAt(i).getData(),data);
+                distance += distancia.calculateDistance(table.getRowAt(i).getData(),data);
             }
-            if(distancia <= menor){
-                menor = distancia;
+            if(distance <= menor){
+                menor = distance;
                 numberClass = table.getRowAt(i).getNumberClass();
             }
         }
         return numberClass;
     }
 
-    public double distancia(List<Double> list1, List<Double> list2){
-        double resultado = 0.0;
-        for(int i = 0; i<list1.size();i++) {
-            resultado += Math.pow(list1.get(i) - list2.get(i),2);
-        }
-        return Math.sqrt(resultado);
-    }
 
+    @Override
+    public void setDistance(Distance distance) {
+        this.distancia = distance;
+    }
 }
