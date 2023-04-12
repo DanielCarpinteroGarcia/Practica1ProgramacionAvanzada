@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,34 +37,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.5586207"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.KNNTest.estimate">
-    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Algoritmos" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.KMeansTest.estimate">
+    <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.SongRecSys" />
+      <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="PATTERN" value="Algoritmos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
+    <configuration name="CSVTest.readTable (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="LecturaCSV.*" />
@@ -78,8 +86,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
+    <configuration name="CSVTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LecturaCSV" />
+      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="METHOD_NAME" value="readTableWithLabels" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Algoritmos.*" />
@@ -87,8 +111,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.KMeansTest" />
+      <option name="METHOD_NAME" value="estimate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,17 +136,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KMeansTest.estimate" />
+        <item itemvalue="Application.SongRecSys" />
+        <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
+        <item itemvalue="JUnit.CSVTest.readTable (1)" />
         <item itemvalue="JUnit.KNNTest.estimate" />
-        <item itemvalue="JUnit.KNNTest" />
-        <item itemvalue="JUnit.CSVTest" />
-        <item itemvalue="JUnit.CSVTest.readTable" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b28545bc-efd4-4e4d-9b59-be7f2895437f" name="Changes" comment="" />
+      <changelist id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="" />
       <created>1677070913183</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -133,6 +159,14 @@
       <workItem from="1677750153576" duration="13736000" />
       <workItem from="1677772995846" duration="55000" />
       <workItem from="1677773083928" duration="39000" />
+      <workItem from="1678184514529" duration="3973000" />
+      <workItem from="1678266673159" duration="1839000" />
+      <workItem from="1678450960118" duration="325000" />
+      <workItem from="1679391378596" duration="6603000" />
+      <workItem from="1680025884901" duration="7065000" />
+      <workItem from="1680276256270" duration="4095000" />
+      <workItem from="1680336124939" duration="14504000" />
+      <workItem from="1680462941654" duration="4381000" />
     </task>
     <servers />
   </component>
@@ -144,10 +178,33 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Prac1-Daniel" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
