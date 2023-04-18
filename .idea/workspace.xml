@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/EuclideanDistanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/ManhattanDistanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/EuclideanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/EuclideanDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -42,6 +47,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
@@ -50,10 +57,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="PatronesDeDiseño" />
       <recent name="Algoritmos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KNNTest">
+  <component name="RunManager" selected="JUnit.EuclideanDistanceTest">
     <configuration name="CSVTest.readTable (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
@@ -82,6 +90,21 @@
       <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
       <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EuclideanDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PatronesDeDiseño.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PatronesDeDiseño" />
+      <option name="MAIN_CLASS_NAME" value="PatronesDeDiseño.EuclideanDistanceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica1ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
-      <option name="METHOD_NAME" value="estimate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EuclideanDistanceTest" />
         <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.KMeansTest" />
         <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
         <item itemvalue="JUnit.CSVTest.readTable (1)" />
-        <item itemvalue="JUnit.KNNTest.estimate" />
       </list>
     </recent_temporary>
   </component>

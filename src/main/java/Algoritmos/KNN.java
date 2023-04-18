@@ -46,6 +46,6 @@ public class KNN  implements DistanceClient {
 
     @Override
     public void setDistance(Distance distance) {
-        
+        //Falta implementar
     }
 }

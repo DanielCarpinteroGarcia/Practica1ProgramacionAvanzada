@@ -123,6 +123,6 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>>, Distance
 
     @Override
     public void setDistance(Distance distance) {
-        
+        // Falta implementar
     }
 }
