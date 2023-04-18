@@ -13,8 +13,6 @@ public class Row {
         return this.data;
     }
 
-
-
 }
 
 

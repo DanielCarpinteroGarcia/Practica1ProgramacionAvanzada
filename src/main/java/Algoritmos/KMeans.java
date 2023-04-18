@@ -39,7 +39,8 @@ public class KMeans implements DistanceClient, Algorithm<Table, Integer, List<Do
         for(int i = 0; i < datos.size(); i++) {
             listaIndices.add(i);
         }
-        Collections.shuffle(listaIndices, new Random(seed));
+        Random random = new Random(seed);
+        Collections.shuffle(listaIndices, random);
         for(int i = 0; i<numClusters; i++) {
             representantes.add(datos.getRowAt(listaIndices.get(i)));
         }
