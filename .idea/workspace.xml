@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/EuclideanDistanceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/ManhattanDistanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/EuclideanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/EuclideanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/KMeansTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/KNNTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/ManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatronesDeDiseño/ManhattanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/ManhattanDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatronesDeDiseño/ManhattanDistanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -56,38 +57,25 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="PatronesDeDiseño" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="PatronesDeDiseño" />
       <recent name="Algoritmos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EuclideanDistanceTest">
-    <configuration name="CSVTest.readTable (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
-      <option name="METHOD_NAME" value="readTable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ManhattanDistanceTest">
     <configuration name="CSVTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
+      <module name="Practica1ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="PATTERN" value="PatronesDeDiseño.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="PACKAGE_NAME" value="PatronesDeDiseño" />
+      <option name="MAIN_CLASS_NAME" value="PatronesDeDiseño.CSVTest" />
       <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -113,12 +101,12 @@
       <module name="Practica1ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="PATTERN" value="PatronesDeDiseño.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="Algoritmos.KMeansTest" />
+      <option name="PACKAGE_NAME" value="PatronesDeDiseño" />
+      <option name="MAIN_CLASS_NAME" value="PatronesDeDiseño.KMeansTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,12 +116,27 @@
       <module name="Practica1ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="PATTERN" value="PatronesDeDiseño.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="Algoritmos.KNNTest" />
+      <option name="PACKAGE_NAME" value="PatronesDeDiseño" />
+      <option name="MAIN_CLASS_NAME" value="PatronesDeDiseño.KNNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManhattanDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PatronesDeDiseño.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PatronesDeDiseño" />
+      <option name="MAIN_CLASS_NAME" value="PatronesDeDiseño.ManhattanDistanceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManhattanDistanceTest" />
         <item itemvalue="JUnit.EuclideanDistanceTest" />
         <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.KMeansTest" />
         <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
-        <item itemvalue="JUnit.CSVTest.readTable (1)" />
       </list>
     </recent_temporary>
   </component>

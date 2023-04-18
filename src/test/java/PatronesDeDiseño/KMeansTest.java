@@ -1,5 +1,6 @@
-package Algoritmos;
+package PatronesDeDiseño;
 
+import Algoritmos.KMeans;
 import Rows.Row;
 import Tables.Table;
 import org.junit.jupiter.api.BeforeAll;

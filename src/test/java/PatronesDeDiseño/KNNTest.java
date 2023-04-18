@@ -1,5 +1,6 @@
-package Algoritmos;
+package PatronesDeDiseño;
 
+import Algoritmos.KNN;
 import LecturaCSV.CSV;
 import org.junit.jupiter.api.Test;
 
