@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CSVTest2 {
+class CSVTemplateTest {
     @Test
     void readTable() {
         String fichero = "miles_dollars.csv";
@@ -48,7 +48,7 @@ class CSVTest2 {
         ReaderTemplate objeto = new CSVLabeledFileReader(fichero2);
         TableWithLabels table = null;
         try {
-            table = objeto.readTableFromSource();
+            table = (TableWithLabels) objeto.readTableFromSource();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

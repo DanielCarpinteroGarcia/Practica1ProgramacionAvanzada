@@ -8,7 +8,6 @@ import java.io.IOException;
 
 abstract class ReaderTemplate {
     protected String source;
-    protected BufferedReader reader;
 
     public ReaderTemplate(String source) {
         this.source = source;
@@ -19,19 +18,15 @@ abstract class ReaderTemplate {
     abstract void processData(String data);
     abstract void closeSource();
     abstract Table createTable();
-    boolean hasMoreData(BufferedReader data) throws IOException {
-        return data.ready();
-    }
-    String getNextData(BufferedReader data) throws IOException {
-        return data.readLine();
-    }
+    abstract boolean hasMoreData();
+    abstract String getNextData();
 
     public final Table readTableFromSource() throws IOException {
         openSource(source);
-        String headers = getNextData(reader);
+        String headers = getNextData();
         processHeaders(headers);
-        while(hasMoreData(reader)) {
-            String data = getNextData(reader);
+        while(hasMoreData()) {
+            String data = getNextData();
             processData(data);
         }
         closeSource();

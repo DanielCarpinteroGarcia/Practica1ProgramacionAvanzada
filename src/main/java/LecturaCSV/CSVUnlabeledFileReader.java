@@ -9,6 +9,7 @@ import java.util.List;
 public class CSVUnlabeledFileReader  extends ReaderTemplate {
 
     private Table table = new Table();
+    private BufferedReader reader;
 
     public CSVUnlabeledFileReader(String source) {
         super(source);
@@ -54,5 +55,23 @@ public class CSVUnlabeledFileReader  extends ReaderTemplate {
     @Override
     Table createTable() {
         return table;
+    }
+
+    @Override
+    boolean hasMoreData() {
+        try {
+            return reader.ready();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    String getNextData() {
+        try {
+            return reader.readLine();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
