@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/DistanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVLabeledFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVLabeledFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVUnlabeledFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVUnlabeledFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iris.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/iris.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miles_dollars.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/miles_dollars.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/KMeansTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/KNNTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/RecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/songs_files/songs_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/songs_files/songs_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/songs_files/songs_test_names.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/songs_files/songs_test_names.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/songs_files/songs_test_withoutnames.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/songs_files/songs_test_withoutnames.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/songs_files/songs_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/songs_files/songs_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/songs_files/songs_train_names.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/songs_files/songs_train_names.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/songs_files/songs_train_withoutnames.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ficheros/songs_files/songs_train_withoutnames.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LecturaCSV/ReaderTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LecturaCSV/ReaderTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,39 +70,25 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ficheros" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main/java/Algoritmos" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CSVTest">
+  <component name="RunManager" selected="JUnit.DistanceTest.distance">
     <configuration name="CSVTemplateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTemplateTest" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVTemplateTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTemplateTest" />
-      <option name="METHOD_NAME" value="readTable" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,12 +97,12 @@
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTemplateTest" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
       <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -114,28 +113,43 @@
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LecturaCSV.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LecturaCSV" />
-      <option name="MAIN_CLASS_NAME" value="LecturaCSV.CSVTest" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="Algoritmos.KMeansTest" />
-      <option name="METHOD_NAME" value="estimate" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DistanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistanceTest.distance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DistanceTest" />
+      <option name="METHOD_NAME" value="distance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DistanceTest.distance" />
+        <item itemvalue="JUnit.DistanceTest" />
+        <item itemvalue="JUnit.CSVTemplateTest" />
         <item itemvalue="JUnit.CSVTest" />
         <item itemvalue="JUnit.CSVTemplateTest.readTableWithLabels" />
-        <item itemvalue="JUnit.CSVTemplateTest.readTable" />
-        <item itemvalue="JUnit.CSVTemplateTest" />
-        <item itemvalue="JUnit.KMeansTest.estimate" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +191,7 @@
       <workItem from="1681292518981" duration="2406000" />
       <workItem from="1681377355284" duration="429000" />
       <workItem from="1681833001662" duration="7964000" />
-      <workItem from="1681926553893" duration="693000" />
+      <workItem from="1681926553893" duration="2077000" />
     </task>
     <servers />
   </component>
@@ -212,7 +226,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

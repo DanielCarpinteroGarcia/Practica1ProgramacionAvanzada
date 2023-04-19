@@ -6,7 +6,7 @@ import Tables.TableWithLabels;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-abstract class ReaderTemplate {
+public abstract class ReaderTemplate {
     protected String source;
 
     public ReaderTemplate(String source) {

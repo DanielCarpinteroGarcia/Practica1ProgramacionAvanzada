@@ -1,5 +1,7 @@
-package Algoritmos;
+package Tests;
 
+import Algoritmos.Algorithm;
+import Algoritmos.KMeansException;
 import Tables.Table;
 
 import java.util.ArrayList;
@@ -7,7 +9,7 @@ import java.util.List;
 
 public class RecSys {
 
-    private  Algorithm algorithm;
+    private Algorithm algorithm;
     private List<Integer> estimaciones = new ArrayList<>();
     private List<String> testItemNames;
     private Table testData;

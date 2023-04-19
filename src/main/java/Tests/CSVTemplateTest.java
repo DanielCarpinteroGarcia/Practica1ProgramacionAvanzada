@@ -1,5 +1,8 @@
-package LecturaCSV;
+package Tests;
 
+import LecturaCSV.CSVLabeledFileReader;
+import LecturaCSV.CSVUnlabeledFileReader;
+import LecturaCSV.ReaderTemplate;
 import Tables.Table;
 import Tables.TableWithLabels;
 import org.junit.jupiter.api.Test;
