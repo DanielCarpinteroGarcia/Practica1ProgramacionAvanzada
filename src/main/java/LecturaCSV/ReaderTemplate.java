@@ -9,12 +9,12 @@ public abstract class ReaderTemplate {
     public ReaderTemplate(String f){
         this.fichero = f;
     }
-    abstract void openSource(String source);
-    abstract void processHeaders(String headers);
-    abstract void processData(String data);
-    abstract void closeSource();
-    abstract boolean hasMoreData();
-    abstract String getNextData();
+    public abstract void openSource(String source);
+    public abstract void processHeaders(String headers);
+    public abstract void processData(String data);
+    public abstract void closeSource();
+    public abstract boolean hasMoreData();
+    public abstract String getNextData();
 
     public final Table readTableFromSource(){
         // 1º Abrir la fuente de datos
