@@ -1,5 +1,6 @@
-package Algoritmos;
+package Tests;
 
+import Algoritmos.KNN;
 import LecturaCSV.CSV;
 import org.junit.jupiter.api.Test;
 

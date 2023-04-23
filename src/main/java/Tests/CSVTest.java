@@ -1,5 +1,6 @@
-package LecturaCSV;
+package Tests;
 
+import LecturaCSV.CSV;
 import Rows.Row;
 import Tables.Table;
 import Tables.TableWithLabels;
