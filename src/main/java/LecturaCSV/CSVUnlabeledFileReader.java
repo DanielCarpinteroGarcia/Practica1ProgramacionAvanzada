@@ -28,7 +28,7 @@ public class CSVUnlabeledFileReader extends ReaderTemplate {
 
     @Override
     public void processHeaders(String headers) {
-        
+
     }
 
     @Override
