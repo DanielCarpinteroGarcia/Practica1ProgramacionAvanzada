@@ -20,6 +20,7 @@ public abstract class ReaderTemplate {
         // 1º Abrir la fuente de datos
         openSource(fichero);
         // 2º Leer la cabecera
+        
         processHeaders(String cabecera);
         // 3º Leer todos los puntos de datos (hasta que no haya más datos)
         processData(String datos);
