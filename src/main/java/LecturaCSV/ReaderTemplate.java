@@ -20,10 +20,12 @@ public abstract class ReaderTemplate {
         // 1º Abrir la fuente de datos
         openSource(fichero);
         // 2º Leer la cabecera
-        
-        processHeaders(String cabecera);
+        String headers = getNextData();
+        processHeaders(headers);
         // 3º Leer todos los puntos de datos (hasta que no haya más datos)
-        processData(String datos);
+        while(hasMoreData()){
+            processData(getNextData());
+        }
         // 4º Cerrar la fuente de datos
         closeSource();
     }
