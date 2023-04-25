@@ -1,4 +1,5 @@
 package LecturaCSV;
 
-public class CSVUnlabeledFileReader {
+public class CSVUnlabeledFileReader extends ReaderTemplate {
+
 }
