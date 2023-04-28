@@ -1,11 +1,7 @@
 package LecturaCSV;
 
-import Rows.Row;
-
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,12 +24,15 @@ public class CSVUnlabeledFileReader extends ReaderTemplate {
 
     @Override
     public void processHeaders(String headers) {
-
+        List<String> cabecera = 
     }
 
     @Override
     public void processData(String data) {
+        List<Double>
+        if(hasMoreData()){
 
+        }
     }
 
     @Override
