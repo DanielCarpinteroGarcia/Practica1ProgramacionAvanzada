@@ -9,7 +9,7 @@ import java.util.*;
 public class CSVUnlabeledFileReader extends ReaderTemplate {
 
     private Scanner sc;
-    public CSVUnlabeledFileReader(String f) {
+    public CSVUnlabeledFileReader(String f, ) {
         super(f);
     }
 

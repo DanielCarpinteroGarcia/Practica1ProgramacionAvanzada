@@ -8,6 +8,7 @@ public abstract class ReaderTemplate {
     private CSVUnlabeledFileReader leerSinEtiqueta;
     private CSVLabeledFileReader leerConEtiqueta;
 
+
     public ReaderTemplate(String f){
         this.fichero = f;
     }
@@ -19,9 +20,8 @@ public abstract class ReaderTemplate {
     public abstract String getNextData();
 
     public final Table readTableFromSource(){
-        Table t = new Table();
         // 1º Abrir la fuente de datos
-        openSource(fichero);
+        leerSinEtiqueta.openSource(fichero);
         // 2º Leer la cabecera
         String headers = getNextData();
         processHeaders(headers);
