@@ -3,7 +3,6 @@ package Algoritmos;
 import Distancias.EuclideanDistance;
 import LecturaCSV.CSV;
 import Tables.Table;
-import Tests.RecSys;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -18,7 +17,7 @@ class SongRecSys {
 
     SongRecSys(String method) throws Exception {
         String sep = System.getProperty("file.separator");
-        String ruta = "src/main/java/Algoritmos/songs_files";
+        String ruta = "src/ficheros/songs_files";
 
         // File names (could be provided as arguments to the constructor to be more general)
         Map<String,String> filenames = new HashMap<>();

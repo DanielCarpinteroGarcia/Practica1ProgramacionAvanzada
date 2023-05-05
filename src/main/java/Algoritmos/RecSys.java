@@ -1,4 +1,4 @@
-package Tests;
+package Algoritmos;
 
 import Algoritmos.Algorithm;
 import Algoritmos.KMeansException;

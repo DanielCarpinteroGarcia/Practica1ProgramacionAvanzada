@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +53,18 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.48331416&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -60,48 +76,61 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DistanceTest.distance">
+  <component name="RunManager" selected="Application.SongRecSys">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProgramacionAvanzada" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mvc.Main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mvc.Main.Main" />
+      <module name="ProgramacionAvanzada" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mvc.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algoritmos.SongRecSys" />
+      <module name="ProgramacionAvanzada" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProgramacionAvanzada" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CSVTemplateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Algoritmos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVTemplateTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
-      <option name="METHOD_NAME" value="readTableWithLabels" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,7 +140,7 @@
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Algoritmos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,7 +155,7 @@
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Algoritmos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,13 +167,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Mvc.Main.Main" />
+      <item itemvalue="Application.SongRecSys" />
+      <item itemvalue="JUnit.CSVTemplateTest" />
+      <item itemvalue="JUnit.DistanceTest" />
+      <item itemvalue="JUnit.DistanceTest.distance" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SongRecSys" />
+        <item itemvalue="Application.Mvc.Main.Main" />
         <item itemvalue="JUnit.DistanceTest.distance" />
         <item itemvalue="JUnit.DistanceTest" />
         <item itemvalue="JUnit.CSVTemplateTest" />
-        <item itemvalue="JUnit.CSVTest" />
-        <item itemvalue="JUnit.CSVTemplateTest.readTableWithLabels" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +213,11 @@
       <workItem from="1681833001662" duration="7964000" />
       <workItem from="1681926553893" duration="2333000" />
       <workItem from="1682280979010" duration="1389000" />
+      <workItem from="1683108236284" duration="2427000" />
+      <workItem from="1683111311624" duration="3305000" />
+      <workItem from="1683139061416" duration="2542000" />
+      <workItem from="1683275987633" duration="518000" />
+      <workItem from="1683276544577" duration="12697000" />
     </task>
     <servers />
   </component>
@@ -204,16 +246,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
