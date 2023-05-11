@@ -1,10 +1,12 @@
 package Mvc.controlador;
 
+import Algoritmos.KMeansException;
+
 import java.io.IOException;
 
 public interface Controlador {
-    public void inicializarCanciones() throws IOException;
-    public void tipoAlgoritmo(String algortimo);
+    void tipoDistancia(String distancia);
+    void tipoAlgoritmo(String algortimo);
 
-    public void tipoDistancia(String s);
+    void recommend(String song) throws KMeansException;
 }

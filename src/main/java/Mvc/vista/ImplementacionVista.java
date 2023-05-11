@@ -1,9 +1,9 @@
 package Mvc.vista;
 
 
+import Algoritmos.KMeansException;
 import Mvc.controlador.Controlador;
 import Mvc.modelo.InterrogaModelo;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -11,7 +11,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.List;
 
 
 public class ImplementacionVista implements InterrogaVista, InformaVista {
@@ -21,6 +20,8 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     private InterrogaModelo modelo;
 
     private ObservableList<String> listaCanciones;
+
+    ListView<String> listSongs;
 
 
     public ImplementacionVista(final Stage stage) {
@@ -56,8 +57,9 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         RadioButton boton3 = new RadioButton("Euclidean");
         RadioButton boton4 = new RadioButton("Manhattan");
 
-        boton1.setOnAction(e -> controlador.tipoDistancia("euclidean"));
-        boton2.setOnAction(e -> controlador.tipoDistancia("manhattan"));
+        boton3.setOnAction(e -> controlador.tipoDistancia("euclidean"));
+        boton4.setOnAction(e -> controlador.tipoDistancia("manhattan"));
+
 
         ToggleGroup group2 = new ToggleGroup();
         boton3.setToggleGroup(group2);
@@ -67,13 +69,22 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         vBox2.getChildren().addAll(labelsubTitle2,boton3,boton4);
 
         Label labelsubTitle3 = new Label("Song Titles");
-        controlador.inicializarCanciones();
+        modelo.getSongs("src/ficheros/songs_files/songs_test_names.csv");
+        listSongs = new ListView<>(listaCanciones);
 
-        ListView<String> listSongs = new ListView<>(listaCanciones);
         Button boton5 = new Button("Recommend");
         boton5.setDisable(true);
         listSongs.setOnMouseClicked(e -> boton5.setDisable(false));
-        boton5.setOnAction(e -> controlador.);
+        VBox popup = new VBox();
+        boton5.setOnAction(e -> {
+            try {
+                controlador.recommend(listSongs.getSelectionModel().getSelectedItem());
+                nuevaVentana();
+
+            } catch (KMeansException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 
 
 
@@ -82,10 +93,23 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         Scene scene = new Scene(types);
         stage.setScene(scene);
 
+
         stage.show();
     }
 
     public void setListaCanciones(ObservableList<String> listaCanciones) {
         this.listaCanciones = listaCanciones;
+    }
+
+    public void nuevaVentana() {
+        Stage subStage = new Stage();
+        subStage.setTitle("Recommended Titles");
+        VBox vBox = new VBox();
+        Scene scene = new Scene(vBox);
+        subStage.setScene(scene);
+        subStage.show();
+    }
+    public String getCancion() {
+        return listSongs.getSelectionModel().getSelectedItem();
     }
 }

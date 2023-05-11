@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SongRecSys">
+  <component name="RunManager" selected="Application.Mvc.Main.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ProgramacionAvanzada" />
@@ -177,8 +175,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SongRecSys" />
         <item itemvalue="Application.Mvc.Main.Main" />
+        <item itemvalue="Application.SongRecSys" />
         <item itemvalue="JUnit.DistanceTest.distance" />
         <item itemvalue="JUnit.DistanceTest" />
         <item itemvalue="JUnit.CSVTemplateTest" />
@@ -218,6 +216,9 @@
       <workItem from="1683139061416" duration="2542000" />
       <workItem from="1683275987633" duration="518000" />
       <workItem from="1683276544577" duration="12697000" />
+      <workItem from="1683620742413" duration="5719000" />
+      <workItem from="1683629238886" duration="6537000" />
+      <workItem from="1683703682912" duration="73000" />
     </task>
     <servers />
   </component>

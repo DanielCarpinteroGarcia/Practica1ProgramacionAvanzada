@@ -1,12 +1,11 @@
 package Mvc.modelo;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import Algoritmos.KMeansException;
 
 public interface CambioModelo {
-    public void loadSongs(String path) throws IOException;
 
-    public void tipoAlgortimo(String algoritmo);
+    void tipoDistancia(String distancia);
+    void tipoAlgoritmo(String algortimo);
 
-    public void tipoDistancia(String distancia);
+    void recommend(String song) throws KMeansException;
 }

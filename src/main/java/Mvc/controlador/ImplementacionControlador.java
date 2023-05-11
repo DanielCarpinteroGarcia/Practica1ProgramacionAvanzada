@@ -1,5 +1,6 @@
 package Mvc.controlador;
 
+import Algoritmos.KMeansException;
 import Mvc.modelo.CambioModelo;
 import Mvc.vista.InterrogaVista;
 import javafx.scene.control.ListView;
@@ -20,21 +21,19 @@ public class ImplementacionControlador implements Controlador {
         this.vista = vista;
     }
 
-    public void inicializarCanciones() throws IOException {
-        modelo.loadSongs("src/ficheros/songs_files/songs_test_names.csv");
-    }
-
-    @Override
-    public void tipoAlgoritmo(String algoritmo) {
-        modelo.tipoAlgortimo(algoritmo);
-
-    }
 
     public void tipoDistancia(String distancia) {
         modelo.tipoDistancia(distancia);
     }
 
-    public void run() {
-        modelo.run();
+    public void tipoAlgoritmo(String algoritmo) {
+        modelo.tipoAlgoritmo(algoritmo);
     }
+    public void recommend(String cancion) throws KMeansException {
+        String song = (vista.getCancion());
+        modelo.recommend(song);
+    }
+
+
+
 }

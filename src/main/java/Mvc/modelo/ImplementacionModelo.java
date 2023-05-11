@@ -1,9 +1,6 @@
 package Mvc.modelo;
 
-import Algoritmos.Algorithm;
-import Algoritmos.KMeans;
-import Algoritmos.KNN;
-import Algoritmos.RecSys;
+import Algoritmos.*;
 import Distancias.Distance;
 import Distancias.EuclideanDistance;
 import Distancias.ManhattanDistance;
@@ -15,7 +12,6 @@ import javafx.collections.ObservableList;
 
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,12 +20,17 @@ import java.util.List;
 public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
 
     private InformaVista vista;
-    private List<String> listaCanciones;
     private RecSys recSys;
+    private CSV csv;
+    private Algorithm algorithm;
+    List<String> listaCanciones;
 
-    private KNN knn;
+    List<String> listaRecomendaciones;
 
-    private KMeans kMeans;
+    private Table tableTrain;
+    private Table tableTest;
+
+    private Distance distance;
 
 
     public ImplementacionModelo(){
@@ -40,7 +41,7 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
     }
 
     @Override
-    public void loadSongs(String fileName) throws IOException {
+    public void getSongs(String fileName) throws IOException {
         listaCanciones = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         while(reader.ready()) {
@@ -50,34 +51,39 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
         vista.setListaCanciones(listSongs);
     }
 
-    public void tipoAlgortimo(String algoritmo) {
-        if( algoritmo.equals("knn")) {
-            knn = new KNN();
-            recSys = new RecSys(knn);
-        } else {
-            kMeans = new KMeans(15, 200, 4321, new EuclideanDistance());
-            recSys = new RecSys(kMeans);
-        }
-    }
 
     public void tipoDistancia(String distancia) {
         if(distancia.equals("euclidean")) {
-            knn.setDistance(new EuclideanDistance());
-            kMeans.setDistance(new EuclideanDistance());
+            distance = new EuclideanDistance();
         } else {
-            knn.setDistance(new ManhattanDistance());
-            kMeans.setDistance(new ManhattanDistance());
+            distance = new ManhattanDistance();
         }
     }
 
-    public void run() {
-        CSV csv = new CSV();
+    public void tipoAlgoritmo(String algoritmo) {
+       csv = new CSV();
+        if(algoritmo.equals("knn")) {
+            tableTrain = csv.readTableWithLabels("src/ficheros/songs_files/songs_train.csv");
+            tableTest = csv.readTableWithLabels("src/ficheros/songs_files/songs_test.csv");
+            algorithm = new KNN(distance);
 
-        recSys.run();
+        } else {
+            tableTrain = csv.readTable("src/ficheros/songs_files/songs_train_withoutnames.csv");
+            tableTest = csv.readTable("src/ficheros/songs_files/songs_test_withoutnames.csv");
+            algorithm = new KMeans(15, 200, 4321,distance);
+        }
     }
 
+    public void recommend(String song) throws KMeansException {
+        recSys = new RecSys(algorithm);
+        recSys.train(tableTrain);
+        recSys.run(tableTest,listaCanciones);
+        listaRecomendaciones = recSys.recommend(song,5);
+    }
 
-
+    public List<String> getListaRecomendaciones() {
+        return listaRecomendaciones;
+    }
 
 
 }

@@ -1,4 +1,4 @@
-/*
+
 package Mvc.Main;
 
 import Mvc.controlador.ImplementacionControlador;
@@ -29,4 +29,3 @@ public class Main extends Application {
         vista.createGUI();
     }
 }
-*/
