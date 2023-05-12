@@ -7,15 +7,11 @@
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.48331416&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.48331416",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ficheros" />
@@ -219,6 +216,7 @@
       <workItem from="1683620742413" duration="5719000" />
       <workItem from="1683629238886" duration="6537000" />
       <workItem from="1683703682912" duration="73000" />
+      <workItem from="1683882014485" duration="5959000" />
     </task>
     <servers />
   </component>

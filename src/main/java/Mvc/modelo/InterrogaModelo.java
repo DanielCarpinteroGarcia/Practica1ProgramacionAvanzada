@@ -1,10 +1,14 @@
 package Mvc.modelo;
 
+import javafx.collections.ObservableList;
+
 import java.io.IOException;
-import java.util.List;
 
 public interface InterrogaModelo {
-    public void getSongs(String path) throws IOException;
+    public ObservableList<String> getSongs(String path) throws IOException;
 
-    Object getListaRecomendaciones();
+    ObservableList<Integer> getNSongs();
+
+
+    ObservableList<String> recommend();
 }

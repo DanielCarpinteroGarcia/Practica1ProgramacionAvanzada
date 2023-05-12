@@ -23,6 +23,8 @@ public class KNN implements DistanceClient, Algorithm<TableWithLabels,Integer,Li
         this.table = data;
     }
 
+
+
     public Integer estimate (List<Double> data) {
         double menor = 1000000;
         int numberClass = -1;

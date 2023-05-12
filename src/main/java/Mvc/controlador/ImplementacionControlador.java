@@ -29,10 +29,7 @@ public class ImplementacionControlador implements Controlador {
     public void tipoAlgoritmo(String algoritmo) {
         modelo.tipoAlgoritmo(algoritmo);
     }
-    public void recommend(String cancion) throws KMeansException {
-        String song = (vista.getCancion());
-        modelo.recommend(song);
-    }
+
 
 
 

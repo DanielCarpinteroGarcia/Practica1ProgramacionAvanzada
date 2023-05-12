@@ -4,9 +4,11 @@ package Mvc.vista;
 import Algoritmos.KMeansException;
 import Mvc.controlador.Controlador;
 import Mvc.modelo.InterrogaModelo;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -19,9 +21,12 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     private Controlador controlador;
     private InterrogaModelo modelo;
 
-    private ObservableList<String> listaCanciones;
+
+    ListView<String> listRecommendations;
 
     ListView<String> listSongs;
+
+    String songSelected;
 
 
     public ImplementacionVista(final Stage stage) {
@@ -69,22 +74,14 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         vBox2.getChildren().addAll(labelsubTitle2,boton3,boton4);
 
         Label labelsubTitle3 = new Label("Song Titles");
-        modelo.getSongs("src/ficheros/songs_files/songs_test_names.csv");
-        listSongs = new ListView<>(listaCanciones);
+
+        listSongs = new ListView<>(getListSongs());
 
         Button boton5 = new Button("Recommend");
         boton5.setDisable(true);
         listSongs.setOnMouseClicked(e -> boton5.setDisable(false));
-        VBox popup = new VBox();
-        boton5.setOnAction(e -> {
-            try {
-                controlador.recommend(listSongs.getSelectionModel().getSelectedItem());
-                nuevaVentana();
-
-            } catch (KMeansException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
+        songSelected = listSongs.getSelectionModel().getSelectedItem();
+        boton5.setOnAction(e -> nuevaVentana());
 
 
 
@@ -97,19 +94,41 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         stage.show();
     }
 
-    public void setListaCanciones(ObservableList<String> listaCanciones) {
-        this.listaCanciones = listaCanciones;
+
+    public ObservableList<String> getListSongs() throws IOException {
+        return modelo.getSongs("src/ficheros/songs_files/songs_test_names.csv");
+    }
+    public String getCancion() {
+        return listSongs.getSelectionModel().getSelectedItem();
+    }
+
+    public ObservableList<Integer> getNSongs() {
+        return modelo.getNSongs();
     }
 
     public void nuevaVentana() {
         Stage subStage = new Stage();
         subStage.setTitle("Recommended Titles");
-        VBox vBox = new VBox();
+
+
+        Label nRecomendations = new Label("Number of recommendations:");
+        Spinner<Integer> spinnerNSongs = new Spinner<>(getNSongs());
+
+        HBox hBox = new HBox(nRecomendations,spinnerNSongs);
+        Label likedTitle = new Label("If you liked " + getCancion() + " you might like");
+        listRecommendations = new ListView<>(getListRecommendations());
+        VBox vBox = new VBox(hBox,likedTitle,listRecommendations);
         Scene scene = new Scene(vBox);
         subStage.setScene(scene);
         subStage.show();
     }
-    public String getCancion() {
-        return listSongs.getSelectionModel().getSelectedItem();
+
+    public ObservableList<String> getListRecommendations() {
+        return modelo.recommend();
     }
+
+    public String getSongSelected() {
+        return songSelected;
+    }
+
 }
