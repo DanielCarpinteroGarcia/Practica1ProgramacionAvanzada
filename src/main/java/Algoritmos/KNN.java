@@ -14,6 +14,7 @@ public class KNN implements DistanceClient, Algorithm<TableWithLabels,Integer,Li
     private Distance distancia;
 
     public KNN() {
+        this.distancia = new EuclideanDistance();
     }
     public KNN(Distance distance) {
         this.distancia = distance;

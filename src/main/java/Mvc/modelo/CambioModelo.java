@@ -7,4 +7,6 @@ public interface CambioModelo {
 
     void tipoDistancia(String distancia);
     void tipoAlgoritmo(String algortimo);
+
+    void recommend(String songSelected);
 }

@@ -30,6 +30,11 @@ public class ImplementacionControlador implements Controlador {
         modelo.tipoAlgoritmo(algoritmo);
     }
 
+    public void recommend() {
+        String songSelected = vista.getSongSelected();
+        modelo.recommend(songSelected);
+    }
+
 
 
 

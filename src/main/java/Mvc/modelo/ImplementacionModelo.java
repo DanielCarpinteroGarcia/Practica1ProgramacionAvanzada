@@ -62,17 +62,12 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
             listaCanciones.add(reader.readLine());
         }
         ObservableList<String> listSongs = FXCollections.observableList(listaCanciones);
+
         return listSongs;
     }
 
-    public ObservableList<Integer> getNSongs() {
-       List<Integer> listaNCanciones = new ArrayList<>();
-       for( int i = 0; i < listaCanciones.size() - 1; i++) {
-           listaNCanciones.add( i+1);
-       }
-        ObservableList<Integer> listNSongs = FXCollections.observableList(listaNCanciones);
-
-       return listNSongs;
+    public Integer getNSongs() {
+       return listaCanciones.size();
 
     }
 
@@ -108,8 +103,7 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
 
 
 
-    public ObservableList<String> recommend() {
-        String songSelected = vista.getSongSelected();
+    public void recommend(String songSelected) {
         recSys = new RecSys(algorithms.get("algorithm"));
         try {
             recSys.train(tables.get("tableTrain"));
@@ -118,12 +112,12 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
         }
         recSys.run(tables.get("tableTest"),listaCanciones);
         listaRecomendaciones = recSys.recommend(songSelected,numRecommendations);
-        ObservableList<String> listRecommendations = FXCollections.observableList(listaRecomendaciones);
-
-        return listRecommendations;
-
+        vista.listRecommendChange();
     }
 
 
+    public List<String> getListaRecomendaciones() {
+        return listaRecomendaciones;
+    }
 
 }

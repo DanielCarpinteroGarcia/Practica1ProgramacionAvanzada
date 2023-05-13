@@ -21,12 +21,12 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     private Controlador controlador;
     private InterrogaModelo modelo;
 
-
-    ListView<String> listRecommendations;
+    ObservableList<String> listRecommendations;
 
     ListView<String> listSongs;
 
     String songSelected;
+
 
 
     public ImplementacionVista(final Stage stage) {
@@ -44,91 +44,90 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     public void createGUI() throws IOException {
         stage.setTitle("Song Recommender");
 
-        Label labelsubTitle1 = new Label("Recomendation Type");
-        RadioButton boton1 = new RadioButton("Recommend based on song features");
-        RadioButton boton2 = new RadioButton("Recommend based on guessed genre");
+        Label labelAlgorithm = new Label("Recomendation Type");
+        RadioButton buttonKNN = new RadioButton("Recommend based on song features");
+        RadioButton buttonKMeans = new RadioButton("Recommend based on guessed genre");
 
-        boton1.setOnAction(e -> controlador.tipoAlgoritmo("knn"));
-        boton2.setOnAction(e -> controlador.tipoAlgoritmo("kmeans"));
+        buttonKNN.setOnAction(e -> controlador.tipoAlgoritmo("knn"));
+        buttonKMeans.setOnAction(e -> controlador.tipoAlgoritmo("kmeans"));
 
-        ToggleGroup group1 = new ToggleGroup();
-        boton1.setToggleGroup(group1);
-        boton2.setToggleGroup(group1);
+        ToggleGroup groupAlgorithm = new ToggleGroup();
+        buttonKNN.setToggleGroup(groupAlgorithm);
+        buttonKMeans.setToggleGroup(groupAlgorithm);
 
-        VBox vBox1 = new VBox();
-        vBox1.getChildren().addAll(labelsubTitle1,boton1,boton2);
-
-        Label labelsubTitle2 = new Label("Distance Type");
-        RadioButton boton3 = new RadioButton("Euclidean");
-        RadioButton boton4 = new RadioButton("Manhattan");
-
-        boton3.setOnAction(e -> controlador.tipoDistancia("euclidean"));
-        boton4.setOnAction(e -> controlador.tipoDistancia("manhattan"));
+        VBox vBoxAlgorithm = new VBox(labelAlgorithm,buttonKNN,buttonKMeans);
 
 
-        ToggleGroup group2 = new ToggleGroup();
-        boton3.setToggleGroup(group2);
-        boton4.setToggleGroup(group2);
+        Label labelDistance = new Label("Distance Type");
+        RadioButton buttonEuclidean = new RadioButton("Euclidean");
+        RadioButton buttonManhattan = new RadioButton("Manhattan");
 
-        VBox vBox2 = new VBox();
-        vBox2.getChildren().addAll(labelsubTitle2,boton3,boton4);
+        buttonEuclidean.setOnAction(e -> controlador.tipoDistancia("euclidean"));
+        buttonManhattan.setOnAction(e -> controlador.tipoDistancia("manhattan"));
 
-        Label labelsubTitle3 = new Label("Song Titles");
+        ToggleGroup groupDistance = new ToggleGroup();
+        buttonEuclidean.setToggleGroup(groupDistance);
+        buttonManhattan.setToggleGroup(groupDistance);
 
+        VBox vBoxDistance = new VBox(labelDistance, buttonEuclidean,buttonManhattan);
+
+
+        Label labelSongs = new Label("Song Titles");
         listSongs = new ListView<>(getListSongs());
-
-        Button boton5 = new Button("Recommend");
-        boton5.setDisable(true);
-        listSongs.setOnMouseClicked(e -> boton5.setDisable(false));
-        songSelected = listSongs.getSelectionModel().getSelectedItem();
-        boton5.setOnAction(e -> nuevaVentana());
+        Button buttonRecommend = new Button("Recommend");
+        buttonRecommend.setDisable(true);
+        listSongs.setOnMouseClicked(e -> buttonRecommend.setDisable(false));
+        buttonRecommend.setOnAction(e -> nuevaVentana());
 
 
+        VBox vBoxSongs = new VBox(labelSongs,listSongs,buttonRecommend);
 
-        VBox types = new VBox(vBox1,vBox2,labelsubTitle3,listSongs,boton5);
+
+        VBox types = new VBox(vBoxAlgorithm,vBoxDistance,vBoxSongs);
 
         Scene scene = new Scene(types);
         stage.setScene(scene);
-
-
         stage.show();
     }
 
-
-    public ObservableList<String> getListSongs() throws IOException {
-        return modelo.getSongs("src/ficheros/songs_files/songs_test_names.csv");
-    }
-    public String getCancion() {
-        return listSongs.getSelectionModel().getSelectedItem();
-    }
-
-    public ObservableList<Integer> getNSongs() {
-        return modelo.getNSongs();
-    }
-
     public void nuevaVentana() {
+        controlador.recommend();
         Stage subStage = new Stage();
         subStage.setTitle("Recommended Titles");
 
 
         Label nRecomendations = new Label("Number of recommendations:");
-        Spinner<Integer> spinnerNSongs = new Spinner<>(getNSongs());
+        Spinner<Integer> spinnerNSongs = new Spinner<>(1,getNSongs(),5);
 
-        HBox hBox = new HBox(nRecomendations,spinnerNSongs);
-        Label likedTitle = new Label("If you liked " + getCancion() + " you might like");
-        listRecommendations = new ListView<>(getListRecommendations());
-        VBox vBox = new VBox(hBox,likedTitle,listRecommendations);
+        HBox hBoxRecommends = new HBox(nRecomendations,spinnerNSongs);
+
+        Label likedTitle = new Label("If you liked " + getSongSelected() + " you might like");
+        ListView<String> listRecommendations = new ListView<>(this.listRecommendations);
+
+        Button buttonClose = new Button("Close");
+        buttonClose.setOnAction(e -> subStage.close());
+
+        VBox vBox = new VBox(hBoxRecommends,likedTitle,listRecommendations, buttonClose);
         Scene scene = new Scene(vBox);
         subStage.setScene(scene);
         subStage.show();
     }
 
-    public ObservableList<String> getListRecommendations() {
-        return modelo.recommend();
+    public ObservableList<String> getListSongs() throws IOException {
+        return modelo.getSongs("src/ficheros/songs_files/songs_test_names.csv");
+    }
+
+    public Integer getNSongs() {
+        return modelo.getNSongs();
+    }
+
+    public ObservableList<String> listRecommendChange() {
+        listRecommendations = FXCollections.observableList(modelo.getListaRecomendaciones());
+        return listRecommendations;
     }
 
     public String getSongSelected() {
-        return songSelected;
+        return listSongs.getSelectionModel().getSelectedItem();
     }
 
 }
