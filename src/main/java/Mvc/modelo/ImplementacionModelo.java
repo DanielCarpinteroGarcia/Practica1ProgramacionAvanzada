@@ -71,6 +71,14 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
 
     }
 
+    public Integer getNumRecommendationsInicial() {
+        return numRecommendations;
+    }
+    public ObservableList<String> getListaRecomendaciones() {
+        ObservableList<String> listRecommendations = FXCollections.observableList(listaRecomendaciones);
+        return listRecommendations;
+    }
+
     public void tipoAlgoritmo(String algoritmo) {
         filenames();
         csv = new CSV();
@@ -103,6 +111,12 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
 
 
 
+    public void recommendDinamico(String songSelected, Integer numRecommendations) {
+        listaRecomendaciones.clear();
+        listaRecomendaciones = recSys.recommend(songSelected,numRecommendations);
+        vista.listRecommendationsChanged();
+    }
+
     public void recommend(String songSelected) {
         recSys = new RecSys(algorithms.get("algorithm"));
         try {
@@ -111,13 +125,11 @@ public class ImplementacionModelo implements CambioModelo,InterrogaModelo {
             throw new RuntimeException(e);
         }
         recSys.run(tables.get("tableTest"),listaCanciones);
-        listaRecomendaciones = recSys.recommend(songSelected,numRecommendations);
-        vista.listRecommendChange();
+        listaRecomendaciones = recSys.recommend(songSelected,getNumRecommendationsInicial());
     }
 
 
-    public List<String> getListaRecomendaciones() {
-        return listaRecomendaciones;
-    }
+
+
 
 }

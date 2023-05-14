@@ -6,10 +6,9 @@ import java.io.IOException;
 import java.util.List;
 
 public interface InterrogaModelo {
-    public ObservableList<String> getSongs(String path) throws IOException;
-
+    ObservableList<String> getSongs(String path) throws IOException;
+    ObservableList<String> getListaRecomendaciones();
     Integer getNSongs();
 
-    List<String> getListaRecomendaciones();
-
+    Integer getNumRecommendationsInicial();
 }

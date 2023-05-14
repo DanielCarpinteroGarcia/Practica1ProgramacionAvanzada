@@ -8,5 +8,7 @@ public interface InformaVista {
 
     Integer getNSongs();
     ObservableList<String> getListSongs() throws IOException;
-    ObservableList<String> listRecommendChange();
+
+    void listRecommendationsChanged();
+
 }

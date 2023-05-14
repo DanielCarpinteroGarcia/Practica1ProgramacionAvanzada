@@ -35,6 +35,13 @@ public class ImplementacionControlador implements Controlador {
         modelo.recommend(songSelected);
     }
 
+    public void recommendDinamico() {
+        Integer numRecommendations = vista.getNumRecommendations();
+        String songSelected = vista.getSongSelected();
+        modelo.recommendDinamico(songSelected,numRecommendations);
+
+    }
+
 
 
 

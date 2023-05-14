@@ -21,13 +21,9 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     private Controlador controlador;
     private InterrogaModelo modelo;
 
-    ObservableList<String> listRecommendations;
-
     ListView<String> listSongs;
-
-    String songSelected;
-
-
+    ListView<String> listaRecomendaciones;
+    Spinner<Integer> spinnerNSongs;
 
     public ImplementacionVista(final Stage stage) {
         this.stage = stage;
@@ -76,7 +72,14 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         listSongs = new ListView<>(getListSongs());
         Button buttonRecommend = new Button("Recommend");
         buttonRecommend.setDisable(true);
-        listSongs.setOnMouseClicked(e -> buttonRecommend.setDisable(false));
+        listSongs.setOnMouseClicked(e -> {
+            if(getSongSelected() != null) {
+                buttonRecommend.setDisable(false);
+                buttonRecommend.setText("Recommend on " + getSongSelected() + "...");
+            }
+            if(e.getClickCount() == 2)
+                nuevaVentana();
+        });
         buttonRecommend.setOnAction(e -> nuevaVentana());
 
 
@@ -97,17 +100,17 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
 
 
         Label nRecomendations = new Label("Number of recommendations:");
-        Spinner<Integer> spinnerNSongs = new Spinner<>(1,getNSongs(),5);
-
+        spinnerNSongs = new Spinner<>(1,getNSongs(),getNumRecommendationsInicial());
+        spinnerNSongs.setOnMouseClicked(e -> controlador.recommendDinamico());
         HBox hBoxRecommends = new HBox(nRecomendations,spinnerNSongs);
 
         Label likedTitle = new Label("If you liked " + getSongSelected() + " you might like");
-        ListView<String> listRecommendations = new ListView<>(this.listRecommendations);
+        listaRecomendaciones = new ListView<>(getListRecommendations());
 
         Button buttonClose = new Button("Close");
         buttonClose.setOnAction(e -> subStage.close());
 
-        VBox vBox = new VBox(hBoxRecommends,likedTitle,listRecommendations, buttonClose);
+        VBox vBox = new VBox(hBoxRecommends,likedTitle,listaRecomendaciones, buttonClose);
         Scene scene = new Scene(vBox);
         subStage.setScene(scene);
         subStage.show();
@@ -121,13 +124,26 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         return modelo.getNSongs();
     }
 
-    public ObservableList<String> listRecommendChange() {
-        listRecommendations = FXCollections.observableList(modelo.getListaRecomendaciones());
-        return listRecommendations;
+    public Integer getNumRecommendationsInicial() {
+        return modelo.getNumRecommendationsInicial();
+    }
+
+    public Integer getNumRecommendations() {
+        return spinnerNSongs.getValue();
     }
 
     public String getSongSelected() {
         return listSongs.getSelectionModel().getSelectedItem();
     }
+
+    public ObservableList<String> getListRecommendations() {
+        return modelo.getListaRecomendaciones();
+    }
+
+    public void listRecommendationsChanged() {
+        listaRecomendaciones.setItems(modelo.getListaRecomendaciones());
+    }
+
+
 
 }

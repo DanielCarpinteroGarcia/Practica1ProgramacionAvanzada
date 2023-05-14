@@ -50,7 +50,7 @@ class SongRecSys {
 
         // Given a liked item, ask for a number of recomendations
         String liked_name = "Hellrap";
-        List<String> recommended_items = this.recsys.recommend(liked_name,5);
+        List<String> recommended_items = this.recsys.recommend(liked_name, 5);
 
         // Display the recommendation text (to be replaced with graphical display with JavaFX implementation)
         reportRecommendation(liked_name,recommended_items);

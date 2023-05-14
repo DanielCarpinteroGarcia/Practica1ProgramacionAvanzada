@@ -2,6 +2,7 @@ package Algoritmos;
 
 import Algoritmos.Algorithm;
 import Algoritmos.KMeansException;
+import Rows.Row;
 import Tables.Table;
 
 import java.util.ArrayList;
@@ -13,6 +14,8 @@ public class RecSys {
     private List<Integer> estimaciones = new ArrayList<>();
     private List<String> testItemNames;
     private Table testData;
+
+    private Row data;
     private List<String> recomendaciones = new ArrayList<>();
 
     public RecSys(Algorithm algorithm) {
@@ -37,6 +40,7 @@ public class RecSys {
 
     public List<String> recommend(String nameLikedItem, int numRecommendations) {
         int index = findName(nameLikedItem);
+        data = testData.getRowAt(index);
         Integer etiqueta = estimaciones.get(index);
         selectItems(index,etiqueta,numRecommendations);
 
@@ -56,7 +60,7 @@ public class RecSys {
         List<Integer> listaEtiquetas = new ArrayList<>();
 
         int i = 0;
-        while(listaEtiquetas.size() != numRec - 1) {
+        while(listaEtiquetas.size() - 1 != numRec ) {
             if(estimaciones.get(i).equals(labelLikedItem)) {
                 listaEtiquetas.add(i);
             }
@@ -64,7 +68,7 @@ public class RecSys {
         }
 
         for (Integer etiqueta : listaEtiquetas) {
-            if (!testItemNames.get(etiqueta).equals(testItemNames.get(indexLikedItem))){
+            if (!testItemNames.get(etiqueta).equals(testItemNames.get(indexLikedItem))) {
                 recomendaciones.add(testItemNames.get(etiqueta));
             }
 

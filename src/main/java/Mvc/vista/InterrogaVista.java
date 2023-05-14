@@ -6,4 +6,5 @@ public interface InterrogaVista {
 
     String getSongSelected();
 
+    Integer getNumRecommendations();
 }
