@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,6 +214,7 @@
       <workItem from="1683882014485" duration="6084000" />
       <workItem from="1683960674706" duration="7369000" />
       <workItem from="1685433705477" duration="23000" />
+      <workItem from="1685433760808" duration="3176000" />
     </task>
     <servers />
   </component>

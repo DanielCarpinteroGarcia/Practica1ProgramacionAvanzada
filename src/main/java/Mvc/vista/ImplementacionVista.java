@@ -1,11 +1,10 @@
 package Mvc.vista;
 
 
-import Algoritmos.KMeansException;
 import Mvc.controlador.Controlador;
 import Mvc.modelo.InterrogaModelo;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
@@ -20,6 +19,8 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     private final Stage stage;
     private Controlador controlador;
     private InterrogaModelo modelo;
+
+    private boolean ventanaAbierta = false;
 
     ListView<String> listSongs;
     ListView<String> listaRecomendaciones;
@@ -51,7 +52,7 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         buttonKNN.setToggleGroup(groupAlgorithm);
         buttonKMeans.setToggleGroup(groupAlgorithm);
 
-        VBox vBoxAlgorithm = new VBox(labelAlgorithm,buttonKNN,buttonKMeans);
+        VBox vBoxAlgorithm = new VBox(5,labelAlgorithm,buttonKNN,buttonKMeans);
 
 
         Label labelDistance = new Label("Distance Type");
@@ -65,7 +66,7 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         buttonEuclidean.setToggleGroup(groupDistance);
         buttonManhattan.setToggleGroup(groupDistance);
 
-        VBox vBoxDistance = new VBox(labelDistance, buttonEuclidean,buttonManhattan);
+        VBox vBoxDistance = new VBox(5,labelDistance, buttonEuclidean,buttonManhattan);
 
 
         Label labelSongs = new Label("Song Titles");
@@ -77,16 +78,24 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
                 buttonRecommend.setDisable(false);
                 buttonRecommend.setText("Recommend on " + getSongSelected() + "...");
             }
-            if(e.getClickCount() == 2)
+            if(e.getClickCount() == 2 && !ventanaAbierta) {
+                ventanaAbierta = true;
                 nuevaVentana();
+            }
         });
-        buttonRecommend.setOnAction(e -> nuevaVentana());
+        buttonRecommend.setOnAction(e -> {
+                    if (!ventanaAbierta) {
+                        ventanaAbierta = true;
+                        nuevaVentana();
+                    }
+        });
 
 
-        VBox vBoxSongs = new VBox(labelSongs,listSongs,buttonRecommend);
+        VBox vBoxSongs = new VBox(5,labelSongs,listSongs,buttonRecommend);
 
 
-        VBox types = new VBox(vBoxAlgorithm,vBoxDistance,vBoxSongs);
+        VBox types = new VBox(5,vBoxAlgorithm,vBoxDistance,vBoxSongs);
+        types.setPadding(new Insets(10));
 
         Scene scene = new Scene(types);
         stage.setScene(scene);
@@ -104,13 +113,14 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         spinnerNSongs.setOnMouseClicked(e -> controlador.recommendDinamico());
         HBox hBoxRecommends = new HBox(nRecomendations,spinnerNSongs);
 
-        Label likedTitle = new Label("If you liked " + getSongSelected() + " you might like");
+        Label likedTitle = new Label("If you liked " + "\"" + getSongSelected() + "\"" + " you might like");
         listaRecomendaciones = new ListView<>(getListRecommendations());
 
         Button buttonClose = new Button("Close");
-        buttonClose.setOnAction(e -> subStage.close());
+        buttonClose.setOnAction(e -> {subStage.close();
+                                      ventanaAbierta = false;});
 
-        VBox vBox = new VBox(hBoxRecommends,likedTitle,listaRecomendaciones, buttonClose);
+        VBox vBox = new VBox(5,hBoxRecommends,likedTitle,listaRecomendaciones, buttonClose);
         Scene scene = new Scene(vBox);
         subStage.setScene(scene);
         subStage.show();
