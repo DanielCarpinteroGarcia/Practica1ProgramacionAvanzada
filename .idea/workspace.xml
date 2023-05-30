@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/controlador/ImplementacionControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/CambioModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/ImplementacionModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/modelo/InterrogaModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/ImplementacionVista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InformaVista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mvc/vista/InterrogaVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +212,7 @@
       <workItem from="1683703682912" duration="73000" />
       <workItem from="1683882014485" duration="6084000" />
       <workItem from="1683960674706" duration="7369000" />
+      <workItem from="1685433705477" duration="23000" />
     </task>
     <servers />
   </component>
