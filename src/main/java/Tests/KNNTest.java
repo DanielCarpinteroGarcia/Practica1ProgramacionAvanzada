@@ -31,6 +31,7 @@ class KNNTest {
         list3.add(0.0);
         list3.add(0.0);
         list3.add(0.0);
+
         TableWithLabels data = objCSV.readTableWithLabels("src/ficheros/iris.csv");
         objKNN.train(data);
 
