@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CSVTemplateTest {
     @Test
     void readTable() {
-        String fichero = "miles_dollars.csv";
+        String fichero = "src/ficheros/miles_dollars.csv";
         ReaderTemplate objeto = new CSVUnlabeledFileReader(fichero);
         Table table = null;
         try {

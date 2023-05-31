@@ -49,7 +49,7 @@ class SongRecSys {
         this.recsys.run(tables.get(method+"test"), names);
 
         // Given a liked item, ask for a number of recomendations
-        String liked_name = "Hellrap";
+        String liked_name = "Psytrance: From Full on to Forrest Trance";
         List<String> recommended_items = this.recsys.recommend(liked_name, 5);
 
         // Display the recommendation text (to be replaced with graphical display with JavaFX implementation)

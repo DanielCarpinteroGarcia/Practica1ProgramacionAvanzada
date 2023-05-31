@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/RecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/KNNTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +71,8 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Mvc.Main.Main">
-    <configuration name="Mvc.Main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mvc.Main.Main" />
       <module name="ProgramacionAvanzada" />
       <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
@@ -104,41 +108,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVTemplateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DistanceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DistanceTest.distance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algoritmos.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,20 +124,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KMeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.KMeansTest" />
+      <option name="METHOD_NAME" value="estimate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.KNNTest" />
+      <option name="METHOD_NAME" value="estimate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Mvc.Main.Main" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.SongRecSys" />
-      <item itemvalue="JUnit.CSVTemplateTest" />
-      <item itemvalue="JUnit.DistanceTest" />
+      <item itemvalue="JUnit.KMeansTest.estimate" />
+      <item itemvalue="JUnit.KNNTest.estimate" />
       <item itemvalue="JUnit.DistanceTest.distance" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Mvc.Main.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.SongRecSys" />
+        <item itemvalue="JUnit.KNNTest.estimate" />
         <item itemvalue="JUnit.DistanceTest.distance" />
-        <item itemvalue="JUnit.DistanceTest" />
-        <item itemvalue="JUnit.CSVTemplateTest" />
+        <item itemvalue="JUnit.KMeansTest.estimate" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +215,8 @@
       <workItem from="1685433760808" duration="3223000" />
       <workItem from="1685438104556" duration="2746000" />
       <workItem from="1685441668447" duration="693000" />
-      <workItem from="1685475774331" duration="4829000" />
+      <workItem from="1685475774331" duration="5034000" />
+      <workItem from="1685518844828" duration="5384000" />
     </task>
     <servers />
   </component>
@@ -238,16 +245,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Algoritmos/SongRecSys.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

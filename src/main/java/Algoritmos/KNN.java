@@ -27,14 +27,11 @@ public class KNN implements DistanceClient, Algorithm<TableWithLabels,Integer,Li
 
 
     public Integer estimate (List<Double> data) {
-        double menor = 1000000;
-        int numberClass = -1;
+        double menor = distancia.calculateDistance(table.getRowAt(0).getData(),data);
+        int numberClass = table.getRowAt(0).getNumberClass();
         for(int i = 0; i < table.getRows().size(); i++){
-            double distance = 0.0;
-            for(int j = 0; j < data.size(); j++){
-                distance += distancia.calculateDistance(table.getRowAt(i).getData(),data);
-            }
-            if(distance <= menor){
+            double distance = distancia.calculateDistance(table.getRowAt(i).getData(),data);
+            if(distance < menor){
                 menor = distance;
                 numberClass = table.getRowAt(i).getNumberClass();
             }

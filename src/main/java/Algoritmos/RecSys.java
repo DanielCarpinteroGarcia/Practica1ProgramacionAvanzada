@@ -16,7 +16,7 @@ public class RecSys {
     private List<Integer> estimaciones = new ArrayList<>();
     private List<String> testItemNames;
     private Table testData;
-    private List<String> recomendaciones = new ArrayList<>();
+    private List<Integer> selectedIndex = new ArrayList<>();
 
     public RecSys(Algorithm algorithm) {
         this.algorithm = algorithm;
@@ -40,12 +40,12 @@ public class RecSys {
     }
 
     public List<String> recommend(String nameLikedItem, int numRecommendations) {
-        int index = findName(nameLikedItem);
-        List<Double> data = testData.getData(index);
-        Integer label = (Integer) algorithm.estimate(data);
-        selectItems(index,label,numRecommendations);
+        int indexLikedItem = findName(nameLikedItem);
+        List<Double> data = testData.getData(indexLikedItem);
+        Integer labelLikedItem = (Integer) algorithm.estimate(data);
+        selectItems(indexLikedItem,labelLikedItem,numRecommendations);
 
-        return recomendaciones;
+        return getNamesSelectedItems();
     }
 
     private int findName(String nameItem) {
@@ -58,15 +58,14 @@ public class RecSys {
     }
 
     private void selectItems(int indexLikedItem, int labelLikedItem, int numRec) {
+        selectedIndex.clear();
         List<Integer> matchingLabel = new ArrayList<>();
-
         for(int i = 0; i<testData.size(); i++ ) {
             if (estimaciones.get(i) == labelLikedItem && i != indexLikedItem ) {
                 matchingLabel.add(i);
             }
         }
 
-        List<Integer> selectedIndex = new ArrayList<>();
         int i = 0;
         for(Integer index : matchingLabel) {
             if( i >= numRec) {
@@ -75,12 +74,13 @@ public class RecSys {
             selectedIndex.add(index);
             i++;
         }
+    }
 
-        Set<String> uniqueRecommendations = new HashSet<>();
+    private List<String> getNamesSelectedItems() {
+        List<String> recomendaciones = new ArrayList<>();
         for (Integer index : selectedIndex ) {
-            uniqueRecommendations.add(testItemNames.get(index));
+            recomendaciones.add(testItemNames.get(index));
         }
-
-        recomendaciones.addAll(uniqueRecommendations);
+        return recomendaciones;
     }
 }

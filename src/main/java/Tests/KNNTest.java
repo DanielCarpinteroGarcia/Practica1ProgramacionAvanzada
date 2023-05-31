@@ -2,6 +2,7 @@ package Tests;
 
 import Algoritmos.KNN;
 import LecturaCSV.CSV;
+import Tables.TableWithLabels;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -30,7 +31,9 @@ class KNNTest {
         list3.add(0.0);
         list3.add(0.0);
         list3.add(0.0);
-        objKNN.train(objCSV.readTableWithLabels("iris.csv"));
+        TableWithLabels data = objCSV.readTableWithLabels("src/ficheros/iris.csv");
+        objKNN.train(data);
+
         assertEquals(0, objKNN.estimate(list1));
         assertEquals(1, objKNN.estimate(list2));
         assertEquals(0,objKNN.estimate(list3));

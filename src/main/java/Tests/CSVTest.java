@@ -16,7 +16,7 @@ class CSVTest {
     @Test
     void readTable() {
         CSV objeto = new CSV();
-        String fichero = "miles_dollars.csv";
+        String fichero = "src/ficheros/miles_dollars.csv";
         Table obtenido = objeto.readTable(fichero);
 
         assertEquals(25, obtenido.getRows().size());
