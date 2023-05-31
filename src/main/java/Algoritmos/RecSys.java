@@ -6,7 +6,9 @@ import Rows.Row;
 import Tables.Table;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class RecSys {
 
@@ -14,8 +16,6 @@ public class RecSys {
     private List<Integer> estimaciones = new ArrayList<>();
     private List<String> testItemNames;
     private Table testData;
-
-    private Row data;
     private List<String> recomendaciones = new ArrayList<>();
 
     public RecSys(Algorithm algorithm) {
@@ -24,6 +24,7 @@ public class RecSys {
 
     public void train(Table trainData) throws KMeansException {
        algorithm.train(trainData);
+
     }
 
     public void run(Table testData, List<String> testItemNames) {
@@ -40,9 +41,9 @@ public class RecSys {
 
     public List<String> recommend(String nameLikedItem, int numRecommendations) {
         int index = findName(nameLikedItem);
-        data = testData.getRowAt(index);
-        Integer etiqueta = estimaciones.get(index);
-        selectItems(index,etiqueta,numRecommendations);
+        List<Double> data = testData.getData(index);
+        Integer label = (Integer) algorithm.estimate(data);
+        selectItems(index,label,numRecommendations);
 
         return recomendaciones;
     }
@@ -57,21 +58,29 @@ public class RecSys {
     }
 
     private void selectItems(int indexLikedItem, int labelLikedItem, int numRec) {
-        List<Integer> listaEtiquetas = new ArrayList<>();
+        List<Integer> matchingLabel = new ArrayList<>();
 
-        int i = 0;
-        while(listaEtiquetas.size() - 1 != numRec ) {
-            if(estimaciones.get(i).equals(labelLikedItem)) {
-                listaEtiquetas.add(i);
+        for(int i = 0; i<testData.size(); i++ ) {
+            if (estimaciones.get(i) == labelLikedItem && i != indexLikedItem ) {
+                matchingLabel.add(i);
             }
+        }
+
+        List<Integer> selectedIndex = new ArrayList<>();
+        int i = 0;
+        for(Integer index : matchingLabel) {
+            if( i >= numRec) {
+                break;
+            }
+            selectedIndex.add(index);
             i++;
         }
 
-        for (Integer etiqueta : listaEtiquetas) {
-            if (!testItemNames.get(etiqueta).equals(testItemNames.get(indexLikedItem))) {
-                recomendaciones.add(testItemNames.get(etiqueta));
-            }
-
+        Set<String> uniqueRecommendations = new HashSet<>();
+        for (Integer index : selectedIndex ) {
+            uniqueRecommendations.add(testItemNames.get(index));
         }
+
+        recomendaciones.addAll(uniqueRecommendations);
     }
 }
