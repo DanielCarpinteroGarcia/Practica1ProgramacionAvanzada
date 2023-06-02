@@ -41,7 +41,7 @@ class CSVTest {
         //Aquí solo comprobamos si el número que se asigna a cada fila es correcto,
         // el resto de comprobaciones ya están realizadas en el primer test.
         CSV objeto = new CSV();
-        String fichero2 = "iris.csv";
+        String fichero2 = "src/ficheros/iris.csv";
         TableWithLabels obtenido = objeto.readTableWithLabels(fichero2);
 
         assertEquals(0, obtenido.getRowAt(2).getNumberClass());

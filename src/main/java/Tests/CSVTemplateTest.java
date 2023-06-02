@@ -47,7 +47,7 @@ class CSVTemplateTest {
     void readTableWithLabels() {
         //Aquí solo comprobamos si el número que se asigna a cada fila es correcto,
         // el resto de comprobaciones ya están realizadas en el primer test.
-        String fichero2 = "iris.csv";
+        String fichero2 = "src/ficheros/iris.csv";
         ReaderTemplate objeto = new CSVLabeledFileReader(fichero2);
         TableWithLabels table = null;
         try {

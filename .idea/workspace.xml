@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/KNNTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tortuguita/Documents/GitHub/ProgramacionAvanzada",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.48331416",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pathVariables"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tortuguita/Documents/GitHub/ProgramacionAvanzada&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.48331416&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -74,21 +76,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mvc.Main.Main" />
-      <module name="ProgramacionAvanzada" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mvc.Main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SongRecSys">
     <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Algoritmos.SongRecSys" />
       <module name="ProgramacionAvanzada" />
@@ -111,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistanceTest.distance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CSVTemplateTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DistanceTest" />
-      <option name="METHOD_NAME" value="distance" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
+      <option name="METHOD_NAME" value="readTable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CSVTemplateTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
@@ -136,14 +124,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.KMeansTest" />
-      <option name="METHOD_NAME" value="estimate" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
+      <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
@@ -152,27 +140,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.KNNTest" />
-      <option name="METHOD_NAME" value="estimate" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTest" />
+      <option name="METHOD_NAME" value="readTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProgramacionAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CSVTest" />
+      <option name="METHOD_NAME" value="readTableWithLabels" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.SongRecSys" />
-      <item itemvalue="JUnit.KMeansTest.estimate" />
-      <item itemvalue="JUnit.KNNTest.estimate" />
-      <item itemvalue="JUnit.DistanceTest.distance" />
+      <item itemvalue="JUnit.CSVTemplateTest.readTable" />
+      <item itemvalue="JUnit.CSVTemplateTest.readTableWithLabels" />
+      <item itemvalue="JUnit.CSVTest.readTable" />
+      <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.KNNTest.estimate" />
         <item itemvalue="Application.SongRecSys" />
-        <item itemvalue="JUnit.DistanceTest.distance" />
-        <item itemvalue="JUnit.KMeansTest.estimate" />
+        <item itemvalue="JUnit.CSVTemplateTest.readTable" />
+        <item itemvalue="JUnit.CSVTemplateTest.readTableWithLabels" />
+        <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
+        <item itemvalue="JUnit.CSVTest.readTable" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +224,7 @@
       <workItem from="1685441668447" duration="693000" />
       <workItem from="1685475774331" duration="5034000" />
       <workItem from="1685518844828" duration="5384000" />
+      <workItem from="1685691238178" duration="590000" />
     </task>
     <servers />
   </component>

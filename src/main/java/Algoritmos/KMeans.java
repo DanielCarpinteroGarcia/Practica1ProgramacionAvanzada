@@ -63,10 +63,9 @@ public class KMeans implements DistanceClient, Algorithm<Table, Integer, List<Do
         Integer rep = 0;
         double menor = distancia.calculateDistance(dato,representantes.get(0).getData());
 
-        double distance = 0;
         for(int i = 0; i < representantes.size(); i++){
-            distance = distancia.calculateDistance(dato,representantes.get(i).getData());
-            if(distance <= menor){
+            double distance = distancia.calculateDistance(dato,representantes.get(i).getData());
+            if(distance < menor){
                 menor = distance;
                 rep = i;
             }
