@@ -1,6 +1,8 @@
 package Tests;
 
 import Algoritmos.KNN;
+import Distancias.Distance;
+import Distancias.EuclideanDistance;
 import LecturaCSV.CSV;
 import Tables.TableWithLabels;
 import org.junit.jupiter.api.Test;
@@ -40,12 +42,4 @@ class KNNTest {
         assertEquals(0,objKNN.estimate(list3));
 
     }
-
-    @Test
-    void distancia(){
-       /* assertEquals( 2.3, objKNN.distancia(3.40, 1.10));
-        assertEquals(0.9, objKNN.distancia(4.3, 5.2), 0.3d);
-        assertEquals(0, objKNN.distancia(0.0, 0.0)); */
-    }
-
 }

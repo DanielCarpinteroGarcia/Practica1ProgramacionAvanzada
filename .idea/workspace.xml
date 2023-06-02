@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d0922f-a7d4-4ec9-8f9b-00f6549f6c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algoritmos/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTemplateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/CSVTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,21 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SongRecSys">
+  <component name="RunManager" selected="JUnit.KNNTest.estimate">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mvc.Main.Main" />
+      <module name="ProgramacionAvanzada" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mvc.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Algoritmos.SongRecSys" />
       <module name="ProgramacionAvanzada" />
@@ -99,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVTemplateTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DistanceTest.distance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +118,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
-      <option name="METHOD_NAME" value="readTable" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DistanceTest" />
+      <option name="METHOD_NAME" value="distance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVTemplateTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KMeansTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
@@ -124,14 +134,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTemplateTest" />
-      <option name="METHOD_NAME" value="readTableWithLabels" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Tests.KMeansTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CSVTest.readTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KNNTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgramacionAvanzada" />
       <extension name="coverage">
         <pattern>
@@ -140,43 +149,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTest" />
-      <option name="METHOD_NAME" value="readTable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVTest.readTableWithLabels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProgramacionAvanzada" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CSVTest" />
-      <option name="METHOD_NAME" value="readTableWithLabels" />
+      <option name="MAIN_CLASS_NAME" value="Tests.KNNTest" />
+      <option name="METHOD_NAME" value="estimate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.SongRecSys" />
-      <item itemvalue="JUnit.CSVTemplateTest.readTable" />
-      <item itemvalue="JUnit.CSVTemplateTest.readTableWithLabels" />
-      <item itemvalue="JUnit.CSVTest.readTable" />
-      <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
+      <item itemvalue="JUnit.DistanceTest.distance" />
+      <item itemvalue="JUnit.KMeansTest" />
+      <item itemvalue="JUnit.KNNTest.estimate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KNNTest.estimate" />
+        <item itemvalue="JUnit.KMeansTest" />
+        <item itemvalue="JUnit.DistanceTest.distance" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.SongRecSys" />
-        <item itemvalue="JUnit.CSVTemplateTest.readTable" />
-        <item itemvalue="JUnit.CSVTemplateTest.readTableWithLabels" />
-        <item itemvalue="JUnit.CSVTest.readTableWithLabels" />
-        <item itemvalue="JUnit.CSVTest.readTable" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +217,7 @@
       <workItem from="1685441668447" duration="693000" />
       <workItem from="1685475774331" duration="5034000" />
       <workItem from="1685518844828" duration="5384000" />
-      <workItem from="1685691238178" duration="590000" />
+      <workItem from="1685691238178" duration="953000" />
     </task>
     <servers />
   </component>
